@@ -20,7 +20,7 @@ country_event = {
 	option = {
 		name = DH_portugal.1.a
 		ai_chance = {
-			factor = 50
+			factor = 60
 			modifier = {
 				OR = {
 					any_other_country = {
@@ -56,7 +56,7 @@ country_event = {
 				GER = {
 					has_army_manpower = { size > 2499999}
 				}
-				factor = 0.7.
+				factor = 0.7
 			}
 			modifier = {
 				GER = {

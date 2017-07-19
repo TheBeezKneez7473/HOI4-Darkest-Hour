@@ -12,9 +12,9 @@
  DEN_GER_RP_fascism_autonomy_reichsprotectorate:0 "Reichsprotektorat Nordmark"
  DEN_GER_RP_fascism_autonomy_satellite:0 "Nordmark"
 
- NOR_GER_fascism_autonomy_reichskommissariat:0 "Reichskommissariat Nordland"
- NOR_GER_fascism_autonomy_reichsprotectorate:0 "Reichsprotektorat Nordland"
- NOR_GER_fascism_autonomy_satellite:0 "Nasjonal Samling"
+ NOR_GER_RP_fascism_autonomy_reichskommissariat:0 "Reichskommissariat Nordland"
+ NOR_GER_RP_fascism_autonomy_reichsprotectorate:0 "Reichsprotektorat Nordland"
+ NOR_GER_RP_fascism_autonomy_satellite:0 "Nasjonal Samling"
 
  EGL_GER_RP_fascism_autonomy_reichskommissariat:0 "Reichskommissariat Engeland"
  EGL_GER_RP_fascism_autonomy_reichsprotectorate:0 "Reichsprotektorat Engeland"

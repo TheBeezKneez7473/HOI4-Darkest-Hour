@@ -35,11 +35,30 @@ country_event = {
 			transfer_state = 119
 			add_state_core = 119			
 		}
+		GER = { country_event = { hours = 6 id = DH_ireland.2 }}
 	}
 	#Decline 
 	option = {
 		ai_chance = { factor = 1 }
 		name = DH_ireland.1.b
 		GER = { country_event = { hours = 6 id = DH_germany.34 }}
+	}
+}
+
+#########################################################################
+#  Ireland accepts our offer
+#########################################################################
+country_event = { #Ireland accepted
+	id = DH_ireland.2
+	title = DH_ireland.2.t
+	desc = DH_ireland.2.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	#Very Good
+	option = {
+		name = DH_ireland.2.a
 	}
 }

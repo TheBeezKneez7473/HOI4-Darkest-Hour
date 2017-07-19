@@ -636,6 +636,7 @@ spriteTypes = {
 		name = "GFX_technology_infantry_folder_small_researched_item_bg"
 		textureFile = "gfx//interface//tech_landdoctrine_researched_item_bg.dds"
 	}	
+	
 
 	# support
 	spriteType = {
@@ -750,7 +751,7 @@ spriteTypes = {
 
 	frameAnimatedSpriteType = {
 		name = "GFX_technology_infantry_folder_small_currently_researching_item_bg"
-		texturefile = "gfx//interface//tech_doctrine_researching_anim_strip.dds"
+		texturefile = "gfx//interface//researching_anim_strip.dds"
 		noOfFrames = 9
 		loadType = "INGAME"
 		transparencecheck = yes

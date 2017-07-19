@@ -15,7 +15,13 @@ country_event = {
 
 	#War on Portugal
 	option = {
-		ai_chance = { factor = 1 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_idea = SPA_recovering_from_civil_war
+				factor = 0
+			}
+		}
 		name = DH_spain.1.a
 		SPR = {
 			declare_war_on = {
@@ -32,7 +38,13 @@ country_event = {
 	}
 	#Decline War
 	option = {
-		ai_chance = { factor = 0 }
+		ai_chance = {
+			factor = 0
+			modifier = {
+				has_idea = SPA_recovering_from_civil_war
+				factor = 1
+			}
+		}
 		name = DH_spain.1.b
 		GER = {country_event = { hours = 6 id = DH_germany.6 }}
 	}

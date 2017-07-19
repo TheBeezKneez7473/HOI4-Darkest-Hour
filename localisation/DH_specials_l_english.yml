@@ -3,24 +3,24 @@
   GER_revenge:0 "Blitzkreig!"
   GER_revenge_desc:0 "While others prepare for a rerun of the last war, Germany will show the world the new face of warfare."
 
-  GER_special.1.t:0 "Blitzkreig"
-  GER_special.1.d:0 "With Poland in the east and France in the west, Germany is wedged in between hostile powers. While our enemies still cling on to the defensive, immobile warfare of the past, the German armed forces will coordinate their attacks to force a decisive breakthrough. Success will render useless all remaining enemy defensive positions, instead forcing them to respond to our continual offensive. Only the new Blitzkrieg strategy will grant us victory, and thereby prevents us from fighting in a two front war.."
-  GER_special.1.a:0 "We should take our revenge!"
+  DH_germany_special.1.t:0 "Blitzkreig"
+  DH_germany_special.1.d:0 "With Poland in the east and France in the west, Germany is wedged in between hostile powers. While our enemies still cling on to the defensive, immobile warfare of the past, the German armed forces will coordinate their attacks to force a decisive breakthrough. Success will render useless all remaining enemy defensive positions, instead forcing them to respond to our continual offensive. Only the new Blitzkrieg strategy will grant us victory, and thereby prevents us from fighting in a two front war.."
+  DH_germany_special.1.a:0 "We should take our revenge!"
   
   
   GER_destiny:0 "Destiny"
   GER_destiny_desc:0 "Encirclement forced Germany into war in 1914 and blockade brought her to her knees. Conquest in the east will neatly solve both of those problems. Allowing Germany to fufil her destiny."
  
-  GER_special.2.t:0 "Destiny"
-  GER_special.2.d:0 "Having recently purged its officer corps, reports tell us that the Soviet union is currently on the brink of collapse. This status quo will not exist for much longer, as 3 army groups are marching east until reaching the Arkhangelsk-Astrakhan line. First they must win the border battles with the Red Army, after which each will take their first objectives of Leningrad, Moscow, and Kiev, to eventually secure the rich oil fields in the south. Or as the Führer said: “You only have to kick in the door and the whole rotten structure will come crashing down."
-  GER_special.2.a:0 "It is our destiny!"
+  DH_germany_special.2.t:0 "Destiny"
+  DH_germany_special.2.d:0 "Having recently purged its officer corps, reports tell us that the Soviet union is currently on the brink of collapse. This status quo will not exist for much longer, as 3 army groups are marching east until reaching the Arkhangelsk-Astrakhan line. First they must win the border battles with the Red Army, after which each will take their first objectives of Leningrad, Moscow, and Kiev, to eventually secure the rich oil fields in the south. Or as the Führer said: “You only have to kick in the door and the whole rotten structure will come crashing down."
+  DH_germany_special.2.a:0 "It is our destiny!"
  
   GER_defence:0 "Fortress Europa" 
   GER_defence_desc:0 "The news from the front is grim, but all is not lost. New superior weapons will turn the tide all we need is time to bring them into service."   
 
-  GER_special.3.t:0 "Fortress Europa"
-  GER_special.3.d:0 "Now both the Soviet Union and America are participating in the war, Germany must prevent a second front from opening up in the west. The conquest of Europe has been a stunning success, but we have to defend our territory with tooth and nail. Germany is adamant to turn the continent into an impregnable fortress. However this won’t be sufficient, as our intelligence warns that the Soviets and Western Allies heavily outnumber the Axis, by manpower and by industrial production. The only way to even out the playing field is through the development of superior weaponry."
-  GER_special.3.a:0 "Mein Gott!"  
+  DH_germany_special.3.t:0 "Fortress Europa"
+  DH_germany_special.3.d:0 "Now both the Soviet Union and America are participating in the war, Germany must prevent a second front from opening up in the west. The conquest of Europe has been a stunning success, but we have to defend our territory with tooth and nail. Germany is adamant to turn the continent into an impregnable fortress. However this won’t be sufficient, as our intelligence warns that the Soviets and Western Allies heavily outnumber the Axis, by manpower and by industrial production. The only way to even out the playing field is through the development of superior weaponry."
+  DH_germany_special.3.a:0 "Mein Gott!"  
   
   
 ###Soviet Decisions ---------------------
@@ -28,32 +28,39 @@
   SOV_german_betrayal:0 "German Betrayal" 
   SOV_german_betrayal_desc:0 "Germany has proven herself to be untrustworthy by declaring war on the Soviet Union, breaking the pact between us. But rest assured, that this betrayal will not go unpunished." 
  
- 
   SOV_patrotic_war:0 "The Great Patriotic War"  
   SOV_patrotic_war_desc:0 "The fascist invader may have driven deep into the Soviet Union, but the Red Army and Red Navy are self-sacrificingly disputing every inch of Soviet Soil. The Soviet people must realise this and adandon all heedlessness, they must mobilise themselves and re-focus all their work on wartime production. There can be no mercy for the enemy."  
+  
+  DH_soviet_special.1.t:0 "German Betrayal"
+  DH_soviet_special.1.d:0 "Germany signed a treaty with us and dares break it!? This must not go without punishment!"
+  DH_soviet_special.1.a:0 "For the Motherland!"
+  
+  DH_soviet_special.2.t:0 "Great Patriotic War"
+  DH_soviet_special.2.d:0 "Germany pushes into the Motherland farther then we thought they could. We must put a end to this!"
+  DH_soviet_special.2.a:0 "For the Motherland!"
   
   ### British Decisions ---------------------
 
   ENG_our_finest_hour:0 "Our Finest Hour" 
   ENG_our_finest_hour_desc:0 "With France defeated most people figured that Britain wouldn't last another 6 weeks.They underestimated the spirit of the British people and their government. They bore themselves that if the British Empire and its Commonwealth lasted  for a thousands years, men would still say this was thier finest hour." 
   
-  ENG_special.1.t:0 "Our Finest Hour"
-  ENG_special.1.d:0 "We now stand alone in the face of tyranny; The German war machine has overrun the continent with their new military strategy, knocking out the Low Countries and France in a single lightning-fast campaign. So far British diplomacy has not been fruitful in convincing others to fight alongside the Commonwealth, and it will not be long before the Luftwaffe will seek control over Britain’s airspace. Setting up a new ground-controlled network for intercepting enemy bombers will prove vital for protecting our industry. Let the Battle for Britain begin."
-  ENG_special.1.a:0 "We shall never surrender!" 
+  DH_UK_special.1.t:0 "Our Finest Hour"
+  DH_UK_special.1.d:0 "We now stand alone in the face of tyranny; The German war machine has overrun the continent with their new military strategy, knocking out the Low Countries and France in a single lightning-fast campaign. So far British diplomacy has not been fruitful in convincing others to fight alongside the Commonwealth, and it will not be long before the Luftwaffe will seek control over Britain’s airspace. Setting up a new ground-controlled network for intercepting enemy bombers will prove vital for protecting our industry. Let the Battle for Britain begin."
+  DH_UK_special.1.a:0 "We shall never surrender!" 
   
   ENG_end_of_beginning:0 "The End of the Beginning" 
   ENG_end_of_beginning_desc:0 "We have seen many battles and though the war is not yet won, Now this is not the end. It is not even the beginning of the end. But it is, perhaps, the end of the beginning." 
  
-  ENG_special.2.t:0 "The End of the Beginning"
-  ENG_special.2.d:0 "Allied forces have landed on the beaches of Europe, establishing a foothold following the operations of D-Day. The tide is turning, as more and more men and material are brought ashore, increasing our presence on the continent. Liberation is at hand for the many peoples of Western Europe, but even with plenty of boots on the ground it will still be a long way to Berlin. Yet, a successful land invasion can not be regarded as the end, and not even as the beginning of the end, but it is perhaps “the end of the beginning."
-  ENG_special.2.a:0 "To Victory!"
+  DH_UK_special.2.t:0 "The End of the Beginning"
+  DH_UK_special.2.d:0 "Allied forces have landed on the beaches of Europe, establishing a foothold following the operations of D-Day. The tide is turning, as more and more men and material are brought ashore, increasing our presence on the continent. Liberation is at hand for the many peoples of Western Europe, but even with plenty of boots on the ground it will still be a long way to Berlin. Yet, a successful land invasion can not be regarded as the end, and not even as the beginning of the end, but it is perhaps “the end of the beginning."
+  DH_UK_special.2.a:0 "To Victory!"
  
   ### US Decisions ---------------------
 
   USA_stab_in_the_back:0 "Stab in The Back" 
   USA_stab_in_the_back_desc:0 "The leadership of Italy assured America that they were desirious of peace, but the Government of Italy has now chosen to preserve what it terms its 'Freedom of Action' and the hand that held the dagger has struck it into the back of its neighbour. Some indeed still hold to the now obvious delusion that we of the United States can safely permit the United States to remain a lone island in a world dominated by force." 
   
-  USA_special.1.t:0 "Stab in The Back"
-  USA_special.1.d:0 "The leadership of Italy assured America that they were desirous of peace, but the Government of Italy has now chosen to preserve what it terms its 'Freedom of Action' and the hand that held the dagger has struck it into the back of its neighbour. Some indeed still hold to the now obvious delusion that we of the United States can safely permit the United States to remain a lone island in a world dominated by force. We might once more have to intervene in a European war."
-  USA_special.1.a:0 "Here we go again..."
+  DH_US_special.1.t:0 "Stab in The Back"
+  DH_US_special.1.d:0 "The leadership of Italy assured America that they were desirous of peace, but the Government of Italy has now chosen to preserve what it terms its 'Freedom of Action' and the hand that held the dagger has struck it into the back of its neighbour. Some indeed still hold to the now obvious delusion that we of the United States can safely permit the United States to remain a lone island in a world dominated by force. We might once more have to intervene in a European war."
+  DH_US_special.1.a:0 "Here we go again..."
   

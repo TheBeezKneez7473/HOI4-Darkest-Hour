@@ -1,0 +1,7 @@
+##### Has custom Ministers ? ####################################
+	has_ministers = {
+		OR = {
+			original_tag = GER
+			original_tag = USA			
+		}
+	}

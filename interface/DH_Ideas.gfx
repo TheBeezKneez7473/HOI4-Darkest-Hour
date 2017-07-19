@@ -107,5 +107,13 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_idea_reinhard_heydrich"
 		texturefile = "gfx/interface/ideas/idea_reinhard_heydrich.dds"		
-	}		
+	}
+	spriteType = {
+		name = "GFX_idea_TUR_german_military_aid"
+		texturefile = "gfx/interface/ideas/german_advisors.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PER_german_academic_influence"
+		texturefile = "gfx/interface/ideas/generic_research_bonus.dds"
+	}
 }

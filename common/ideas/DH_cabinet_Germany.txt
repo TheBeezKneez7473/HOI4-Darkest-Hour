@@ -1,0 +1,187 @@
+ideas = {
+
+
+#########################################################################
+#  Head of Governement //HoG 
+#########################################################################
+	head_of_govt = {
+		
+		###Rudolf Hess
+		GER_HoG_rudolf_hess = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			available = {
+
+			}
+
+			traits = { }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		###Martin Bormann
+		GER_HoG_martin_bormann = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			available = {
+				date > 1941.1.1
+			}
+
+			traits = { }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+	}
+#########################################################################
+#  Foreign Minister  // FM 
+#########################################################################
+	foreign_minister = {
+		
+		### Von Ribbentrop
+		GER_FM_von_ribbentrop = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			available = {
+				#always = no
+			}
+
+			traits = { }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+		### Konstantin von Neurath
+		GER_FM_von_neurath = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			available = {
+				#always = no
+			}
+
+			traits = { }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+		
+	}
+#########################################################################
+#  Security Minister // SM
+#########################################################################
+	security_minister = {
+		
+		### Heinrich Himmler
+		GER_SM_heinrich_himmler = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			available = {
+
+			}
+
+			traits = { }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}		
+		### Wilhelm Frick
+		GER_SM_wilhelm_frick = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			available = {
+
+			}
+
+			traits = { }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}		
+	}
+
+#########################################################################
+#  Armaments Minister // AM
+#########################################################################
+	armaments_minister = {
+		
+		### Werner von Blomberg
+		GER_AM_von_blomberg = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			available = {
+
+			}
+
+			traits = { }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}		
+		### Fritz Todt
+		GER_AM_fritz_todt = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			available = {
+
+			}
+
+			traits = { }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+		### Albert Speer
+		GER_AM_albert_speer = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			available = {
+				date > 1943.1.1
+			}
+
+			traits = { }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}		
+		
+	}	
+#########################################################################
+#########################################################################	
+}

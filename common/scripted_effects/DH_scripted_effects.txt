@@ -1,0 +1,39 @@
+#########################################################################
+# Germany
+#########################################################################
+####Sets up German cabinet (1936) ###############################
+GER_1936_cabinet_setup = {
+	GER = {
+		add_ideas = {
+			GER_HoG_rudolf_hess
+			GER_FM_von_neurath
+			GER_SM_wilhelm_frick
+			GER_AM_von_blomberg
+		}
+	}
+}
+#########################################################################
+# United States
+#########################################################################
+####Sets up US cabinet (1936) ###############################
+USA_1936_cabinet_setup = {
+	USA = {
+		add_ideas = {
+			USA_HoG_harry_hopkins
+			USA_FM_cordell_hull
+			USA_SM_edgar_hoover
+			USA_AM_henry_morgenthau
+		}
+	}
+}
+####Sets up US cabinet (1939) ###############################
+USA_1936_cabinet_setup = {
+	USA = {
+		add_ideas = {
+			USA_HoG_harry_hopkins
+			USA_FM_cordell_hull
+			USA_SM_edgar_hoover
+			USA_AM_henry_morgenthau
+		}
+	}
+}

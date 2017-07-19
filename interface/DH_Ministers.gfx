@@ -1,0 +1,40 @@
+spriteTypes = {	
+###Head of Govts ###############################################
+	SpriteType = {
+		name = "GFX_idea_HoG_rudolf_hess"
+		texturefile = "gfx/interface/ideas/cabinet/GER_minister_rudolf_hess.dds"		
+	}	
+	SpriteType = {
+		name = "GFX_idea_HoG_martin_bormann"
+		texturefile = "gfx/interface/ideas/cabinet/GER_minister_martin_bormann.dds"		
+	}
+######Foreign Ministers #########################################	
+	SpriteType = {
+		name = "GFX_idea_FM_von_neurath"
+		texturefile = "gfx/interface/ideas/cabinet/GER_minister_von_neurath.dds"		
+	}	
+	SpriteType = {
+		name = "GFX_idea_FM_von_ribbentrop"
+		texturefile = "gfx/interface/ideas/cabinet/GER_minister_von_ribbentrop.dds"		
+	}
+
+####### Ministers of Security #######################################	
+	SpriteType = {
+		name = "GFX_idea_SM_wilhelm_frick"
+		texturefile = "gfx/interface/ideas/cabinet/GER_minister_wilhelm_frick.dds"		
+	}
+	SpriteType = {
+		name = "GFX_idea_SM_heinrich_himmler"
+		texturefile = "gfx/interface/ideas/cabinet/GER_minister_heinrich_himmler.dds"		
+	}
+####### Armament Ministers ########################################	
+
+	SpriteType = {
+		name = "GFX_idea_HoG_martin_bormann"
+		texturefile = "gfx/interface/ideas/cabinet/GER_minister_martin_bormann.dds"		
+	}	
+	SpriteType = {
+		name = "GFX_idea_HoG_martin_bormann"
+		texturefile = "gfx/interface/ideas/cabinet/GER_minister_martin_bormann.dds"		
+	}	
+}

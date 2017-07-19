@@ -1,4 +1,17 @@
 ﻿l_english:
+ VIC_fascism:1 "French State"
+ VIC_fascism_DEF:1 "The French State"
+ VIC_democratic:0 "French Republic"
+ VIC_democratic_DEF:0 "French Republic"
+ VIC_neutrality:0 "France"
+ VIC_neutrality_DEF:0 "France"
+ VIC_communism:0 "French Commune"
+ VIC_communism_DEF:0 "The French Commune"
+ VIC_fascism_ADJ:1 "French"
+ VIC_democratic_ADJ:0 "French"
+ VIC_neutrality_ADJ:0 "French"
+ VIC_communism_ADJ:0 "French"
+ 
  MTA_fascism:0 "Deutsch-Mittelafrika"
  MTA_fascism_DEF:0 "Das Deutsch-Mittelafrika"
  MTA_democratic:0 "Central Africa"
@@ -36,6 +49,10 @@
  RTU_fascism:0 "Reichskommissariat Turkestan"
  RTU_fascism_DEF:0 "Das Reichskommissariat Turkestan"
  RTU_fascism_ADJ:0 "German"
+ 
+ RFA_fascism:0 "Reichskommissariat France"
+ RFA_fascism_DEF:0 "Das Reichskommissariat France"
+ RFA_fascism_ADJ:0 "German"
  
  RUR_fascism:0 "Reichskommissariat Ural"
  RUR_fascism_DEF:0 "Das Reichskommissariat Ural"

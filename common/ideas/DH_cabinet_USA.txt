@@ -1,0 +1,106 @@
+ideas = {
+
+
+#########################################################################
+#  Head of Governement //HoG 
+#########################################################################
+	head_of_govt = {
+		
+		###Harry l. Hopkins
+		USA_HoG_harry_hopkins = {
+
+			allowed = {
+				original_tag = USA
+			}
+
+			available = {
+
+			}
+
+			traits = { }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		
+	}
+#########################################################################
+#  Foreign Minister  // FM 
+#########################################################################
+	foreign_minister = {
+		
+		### Cordell Hull
+		USA_FM_cordell_hull = {
+
+			allowed = {
+				original_tag = USA
+			}
+
+			available = {
+				#always = no
+			}
+
+			traits = { }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+
+		
+	}
+#########################################################################
+#  Security Minister // SM
+#########################################################################
+	security_minister = {
+		
+		### J. Edgar Hoover
+		USA_SM_edgar_hoover = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			available = {
+
+			}
+
+			traits = { }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}		
+		
+	}
+
+#########################################################################
+#  Armaments Minister // AM
+#########################################################################
+	armaments_minister = {
+		
+		### Henry Morgenthau
+		USA_AM_henry_morgenthau = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			available = {
+
+			}
+
+			traits = { }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}		
+		
+		
+	}	
+#########################################################################
+#########################################################################	
+}

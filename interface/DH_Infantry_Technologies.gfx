@@ -3,63 +3,64 @@ spriteTypes = {
 
 # Rifles
 	SpriteType = {
-		name = "GFX_infantry_rifle_medium"
+		name = "GFX_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/Infantry/Gewehr 98.dds"
 	}
 	SpriteType = {
-		name = "GFX_infantry_rifle1_medium"
+		name = "GFX_infantry_weapons1_medium"
 		texturefile = "gfx/interface/technologies/Infantry/Kar 98k.dds"
 	}
 	SpriteType = {
-		name = "GFX_infantry_rifle2_medium"
+		name = "GFX_infantry_weapons2_medium"
 		texturefile = "gfx/interface/technologies/Infantry/Gewehr 43.dds"
 	}	
 	SpriteType = {
-		name = "GFX_infantry_assault_rifle_medium"
+		name = "GFX_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/Infantry/STG 44.dds"
 	}	
 	
 #SMGs	
 	SpriteType = {
-		name = "GFX_infantry_smg_medium"
-		texturefile = "gfx/interface/technologies/Infantry/M1928 Thompson.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_infantry_smg1_medium"
+		name = "GFX_infantry_weapons_smg_medium"
 		texturefile = "gfx/interface/technologies/Infantry/MP 40.dds"
 	}
 	
 #Infantry eq. upgrades
 	SpriteType = {
-		name = "GFX_infantry_eq_up_medium"
+		name = "GFX_improved_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/Infantry/infantry_weapons.dds"
 	}	
-	
+
+#Infantry AT
 	SpriteType = {
-		name = "GFX_infantry_eq_up1_medium"
-		texturefile = "gfx/interface/technologies/Infantry/infantry_weapons2.dds"
+		name = "GFX_infantry_at_medium"
+		texturefile = "gfx/interface/technologies/Infantry/infantry_at.dds"
 	}
-
-
-
+	SpriteType = {
+		name = "GFX_infantry_at2_medium"
+		texturefile = "gfx/interface/technologies/Infantry/infantry_at2.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_at3_medium"
+		texturefile = "gfx/interface/technologies/Infantry/infantry_at3.dds"
+	}	
 ###Germany ------------------------------
 
 # Rifles
 	SpriteType = {
-		name = "GFX_GER_infantry_rifle_medium"
+		name = "GFX_GER_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/Infantry/Gewehr 98.dds"
 	}
 	SpriteType = {
-		name = "GFX_GER_infantry_rifle1_medium"
+		name = "GFX_GER_infantry_weapons1_medium"
 		texturefile = "gfx/interface/technologies/Infantry/Kar 98k.dds"
 	}
 	SpriteType = {
-		name = "GFX_GER_infantry_rifle2_medium"
+		name = "GFX_GER_infantry_weapons2_medium"
 		texturefile = "gfx/interface/technologies/Infantry/Gewehr 43.dds"
 	}	
 	SpriteType = {
-		name = "GFX_GER_infantry_assault_rifle_medium"
+		name = "GFX_GER_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/Infantry/STG 44.dds"
 	}	
 	
@@ -70,7 +71,7 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_GER_infantry_smg1_medium"
+		name = "GFX_GER_infantry_weapons_smg_medium"
 		texturefile = "gfx/interface/technologies/Infantry/MP 40.dds"
 	}
 
@@ -80,19 +81,19 @@ spriteTypes = {
 
 # Rifles
 	SpriteType = {
-		name = "GFX_USA_infantry_rifle_medium"
+		name = "GFX_USA_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/Infantry/M1903 Springfield.dds"
 	}
 	SpriteType = {
-		name = "GFX_USA_infantry_rifle1_medium"
+		name = "GFX_USA_infantry_weapons1_medium"
 		texturefile = "gfx/interface/technologies/Infantry/M1 Garand.dds"
 	}
 	SpriteType = {
-		name = "GFX_USA_infantry_rifle2_medium"
+		name = "GFX_USA_infantry_weapons2_medium"
 		texturefile = "gfx/interface/technologies/Infantry/M1 Carbine.dds"
 	}	
 	SpriteType = {
-		name = "GFX_USA_infantry_assault_rifle_medium"
+		name = "GFX_USA_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/Infantry/STG 44.dds"
 	}	
 	
@@ -103,7 +104,7 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_USA_infantry_smg1_medium"
+		name = "GFX_USA_infantry_weapons_smg_medium"
 		texturefile = "gfx/interface/technologies/Infantry/M1 Thompson.dds"
 	}
 	
@@ -112,19 +113,19 @@ spriteTypes = {
 
 # Rifles
 	SpriteType = {
-		name = "GFX_SOV_infantry_rifle_medium"
+		name = "GFX_SOV_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/Infantry/Mosin Nagant 1891.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_infantry_rifle1_medium"
-		texturefile = "gfx/interface/technologies/Infantry/SVT-40.dds"
+		name = "GFX_SOV_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/Infantry/Mosin Nagant 1891.dds"
 	}
 	SpriteType = {
-		name = "GFX_SOV_infantry_rifle2_medium"
+		name = "GFX_SOV_infantry_weapons2_medium"
 		texturefile = "gfx/interface/technologies/Infantry/SVT-40.dds"
 	}	
 	SpriteType = {
-		name = "GFX_SOV_infantry_assault_rifle_medium"
+		name = "GFX_SOV_infantry_weapons3_medium"
 		texturefile = "gfx/interface/technologies/Infantry/AK-47.dds"
 	}	
 	
@@ -135,7 +136,7 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_SOV_infantry_smg1_medium"
+		name = "GFX_SOV_infantry_weapons_smg_medium"
 		texturefile = "gfx/interface/technologies/Infantry/PPSh 41.dds"
 	}	
 }

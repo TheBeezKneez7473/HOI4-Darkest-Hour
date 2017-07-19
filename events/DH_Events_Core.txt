@@ -1,10 +1,12 @@
 ﻿###########################
-# Realism Overhaul Events : Spain
+# Darkest Hour  Events : Core
 ###########################
 
 add_namespace = DH_core
 
-
+#########################################################################
+# Add one extra research slot to the majors (Somewhat realistic and historical technological progression)
+#########################################################################
 country_event = {
 	id = DH_core.1
 
@@ -24,5 +26,25 @@ country_event = {
 	
 	option = {
 		name = DH_core.1.a
+	}
+}
+
+#########################################################################
+# Set up cabinets (for those who are done of course)
+#########################################################################
+country_event = {
+	id = DH_core.2
+
+	hidden = yes
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	immediate = {
+		GER_1936_cabinet_setup = yes
+		USA_1936_cabinet_setup = yes		
+	}
+	
+	option = {
+		name = DH_core.2.a
 	}
 }

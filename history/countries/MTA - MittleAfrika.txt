@@ -3,7 +3,7 @@
 
 
 set_technology = {
-	infantry_rifle = 1
+	infantry_weapons = 2
 	gwtank = 1
 	basic_light_tank = 1
 }

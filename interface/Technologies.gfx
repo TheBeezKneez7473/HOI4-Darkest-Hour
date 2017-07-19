@@ -154,23 +154,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/USA_motorized_equipment_1.dds"
 	}
 	
-	SpriteType = {
-		name = "GFX_advanced_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/infantry3.dds"
-	}
 
-	SpriteType = {
-		name = "GFX_improved_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/infantry2.dds"
-	}	
-
-		
-	
-	SpriteType = {
-		name = "GFX_infantry_weapons1_medium"
-		texturefile = "gfx/interface/technologies/infantry1.dds"
-	}	
-	
 	SpriteType = {
 		name = "GFX_mechanised_infantry3_medium"
 		texturefile = "gfx/interface/technologies/mechanized_equipment_3.dds"
@@ -525,31 +509,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/paratroopers.dds"
 	}	
 	
-	SpriteType = {
-		name = "GFX_infantry_at2_medium"
-		texturefile = "gfx/interface/technologies/infantry_at2.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_infantry_at_medium"
-		texturefile = "gfx/interface/technologies/infantry_at.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_infantry_weapons2_medium"
-		texturefile = "gfx/interface/technologies/infantry_weapons.dds"
-	}	
 
-	SpriteType = {
-		name = "GFX_improved_infantry_weapons_2_medium"
-		texturefile = "gfx/interface/technologies/infantry_weapons2.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_advanced_infantry_weapons2_medium"
-		texturefile = "gfx/interface/technologies/infantry_weapons3.dds"
-	}		
-	
+
 	### naval doctrines	###
 
 	SpriteType = {
@@ -1212,6 +1173,16 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
+		name = "GFX_improved_equipment_conversion_medium"
+		texturefile = "gfx/interface/technologies/equipment_conversion.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_advanced_equipment_conversion_medium"
+		texturefile = "gfx/interface/technologies/equipment_conversion2.dds"
+	}	
+
+	SpriteType = {
 		name = "GFX_concentrated_industry_medium"
 		texturefile = "gfx/interface/technologies/concentrated_industry.dds"
 	}	
@@ -1412,24 +1383,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/GER_mechanized_equipment_1.dds"
 	}
 
-
-	
-	SpriteType = {
-		name = "GFX_GER_advanced_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/GER_infantry_equipment_3.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_GER_improved_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/GER_infantry_equipment_2.dds"
-	}	
-
-	SpriteType = {
-		name = "GFX_GER_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/GER_infantry_equipment_1.dds"
-	}
-	
-
 	spriteType = {
 		name = "GFX_subtech_td"
 		textureFile = "gfx//interface//technologies//subtech_td.dds"
@@ -1538,25 +1491,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/SOV_mechanized_equipment_1.dds"
 	}	
 	
-	SpriteType = {
-		name = "GFX_SOV_advanced_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_3.dds"
-	}
 
-	SpriteType = {
-		name = "GFX_SOV_improved_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_2.dds"
-	}		
-	
-#	SpriteType = {
-#		name = "GFX_SOV_infantry3_medium"
-#		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_3.dds"
-#	}	
-#	
-#	SpriteType = {
-#		name = "GFX_SOV_infantry2_medium"
-#		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_2.dds"
-#	}
 	
 	### ENG equipment ###	
 
@@ -2084,16 +2019,7 @@ spriteTypes = {
 
 		### JAP equipment ###		
 
-	SpriteType = {
-		name = "GFX_JAP_advanced_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/JAP_infantry_equipment_3.dds"
-	}
 
-	SpriteType = {
-		name = "GFX_JAP_improved_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/JAP_infantry_equipment_2.dds"
-	}			
-		
 	SpriteType = {
 		name = "GFX_JAP_mechanised_infantry3_medium"
 		texturefile = "gfx/interface/technologies/JAP_mechanized_equipment_3.dds"

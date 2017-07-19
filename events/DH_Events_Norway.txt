@@ -20,6 +20,9 @@ country_event = {
 	# Submit to the coup
 	option = { 
 		name = DH_norway.1.a
+		ai_chance = {
+			factor  = 0
+		}
 		GER = {
 			if = {
 				limit = { has_dlc = "Together for Victory" }
@@ -38,6 +41,9 @@ country_event = {
 	# Death or Dishonor!
 	option = { 
 		name = DH_norway.1.b
+		ai_chance = {
+			factor = 100
+		}
 		start_civil_war = {
 			ruling_party = democratic		
 			ideology = fascism

@@ -1,0 +1,145 @@
+﻿###########################
+# Realism Overhaul Events : Germany
+###########################
+
+add_namespace = DH_iran
+
+#########################################################################
+#  German-Iranian Treaty of Friendship
+#########################################################################
+country_event = { #Italy refused
+	id = DH_iran.1
+	title = DH_iran.1.t
+	desc = DH_iran.1.d
+	picture = GFX_news_event_002
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Accept
+		ai_chance = {
+			factor = 80
+			modifier = {
+				PER = {
+					has_government = fascism
+				}
+				factor = 10000
+			}
+			modifier = {
+				GER = {
+					has_army_manpower = { size > 3000000 }
+				}
+				factor = 0.1
+			}
+		}
+		name = DH_iran.1.a
+		PER = {
+			add_ideas = {
+				PER_german_academic_influence
+			}
+			add_ideas = {
+				fascist_influence
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = mechanical_computing
+				technology = computing_machine
+				technology = improved_computing_machine
+				technology = advanced_computing_machine
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = radio_detection
+				technology = decimetric_radar
+				technology = improved_decimetric_radar
+				technology = centimetric_radar
+				technology = improved_centimetric_radar
+				technology = advanced_centimetric_radar
+			}
+		}
+		GER = { country_event = { hours = 6 id = DH_iran.2 }}
+	}
+	
+	option = { #Deny
+		ai_chance = {
+			factor = 20
+			modifier = {
+				PER = {
+					OR = {
+						has_government = democratic
+						has_government = communism
+					}
+				}
+				factor = 0
+			}
+			modifier = {
+					SOV = {
+						has_army_manpower = { size > 5000000 }
+					}
+					factor = 0.1
+			}
+			modifier = {
+				PER = {
+					num_of_factories > 50
+				}
+				factor = 0.1
+			}
+			modifier = {
+				PER = {
+					has_army_manpower = { size > 500000 }
+				}
+				factor = 0.1
+			}
+		}
+		name = DH_iran.1.b
+		PER = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = protest_action_strong
+			}
+		}
+		GER = {
+			add_opinion_modifier = {
+				target = PER
+				modifier = protest_action_strong
+			}
+		}
+		GER = { country_event = { hours = 6 id = DH_iran.3 }}
+	}
+}
+
+#########################################################################
+#  Iran Accepts Fascist Influence
+#########################################################################
+country_event = {
+	id = DH_iran.2
+	title = DH_iran.2.t
+	desc = DH_iran.2.d
+	picture = GFX_news_event_002
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DH_iran.2.a
+	}
+}
+
+#########################################################################
+#  Iran Declines Fascist Influence
+#########################################################################
+country_event = {
+	id = DH_iran.3
+	title = DH_iran.3.t
+	desc = DH_iran.3.d
+	picture = GFX_news_event_002
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DH_iran.3.a
+	}
+}

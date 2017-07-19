@@ -1,0 +1,31 @@
+﻿l_english:
+ head_of_govt:0 "Head of Government"
+ foreign_minister:0 "Foreign Minister"
+ security_minister:0 "Minister of Security"
+ armaments_minister:0 "Armaments Minister"
+ ##### Germany ####################################################
+ GER_HoG_rudolf_hess:0 "Rudolf Hess"
+ GER_HoG_martin_bormann:0 "Martin Bormann"
+ 
+ GER_FM_von_ribbentrop:0 "J. von Ribbentrop"
+ GER_FM_von_neurath:0 "K. von Neurath"
+ 
+ GER_SM_heinrich_himmler:0 "Heinrich Himmler" 
+ GER_SM_wilhelm_frick:0 "Wilhelm Frick"
+ 
+ GER_AM_von_blomberg:0 "Werner von Blomberg"
+ GER_AM_fritz_todt:0 "Fritz Todt"
+ GER_AM_albert_speer:0 "Albert Speer"
+ ##### United States ####################################################
+ USA_HoG_harry_hopkins:0 "Harry l. Hopkins"
+ 
+ USA_FM_cordell_hull:0 "Cordell Hull"
+ 
+ USA_SM_edgar_hoover:0 "J. Edgar Hoover" 
+ 
+ USA_AM_henry_morgenthau:0 "Henry Morgenthau"
+ 
+ 
+ 
+ 
+ 

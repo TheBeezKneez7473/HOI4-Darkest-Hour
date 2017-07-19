@@ -1,6 +1,13 @@
-﻿add_namespace = DH_commonwealth
+﻿###########################
+# Darkest Hour  Events : Commonwealth
+###########################
 
-#Event when Germany preserves the English Regime in Britain#
+add_namespace = DH_commonwealth
+
+
+#########################################################################
+# Fate of the British Empire : Germany preserves the Regime in Britain
+#########################################################################
 country_event = {
 	id = DH_commonwealth.1
 	title = DH_commonwealth.1.t
@@ -19,21 +26,15 @@ country_event = {
 			has_country_flag = commonwealth_question
 		}
 		is_subject_of = ENG
-		#OR = {
-		#	original_tag = CAN
-		#	original_tag = RAJ
-		#	original_tag = SAF
-		#	original_tag = MAL
-		#	original_tag = AST
-		#	original_tag = NZL
-		#}
+
 	}
 	
 	mean_time_to_happen = {
 		days = 90
 	}
-	
-	option = {#Leave the beaten british Empire
+
+	#Leave the beaten british Empire
+	option = { 
 		name = DH_commonwealth.1.a
 		ai_chance = {
 			factor = 35
@@ -97,8 +98,9 @@ country_event = {
 		ENG = { country_event = { hours = 6 id = DH_commonwealth.2 }}
 		set_country_flag = commonwealth_question
 	}
-	
-	option = {#Stay with the beaten british Empire
+
+	#Stay with the beaten british Empire	
+	option = {
 		name = DH_commonwealth.1.b
 		ai_chance = {
 			factor = 65
@@ -152,11 +154,11 @@ country_event = {
 				factor = 0.1
 			}
 		}
-		#ENG = { country_event = { hours = 6 id = DH_commonwealth.4 }}
 		set_country_flag = commonwealth_question
 	}
-	
-	option = {#join the new Fascist Britain
+
+	#join the new Fascist Britain	
+	option = {
 		name = DH_commonwealth.1.c
 		trigger = {
 			AND = {
@@ -168,7 +170,6 @@ country_event = {
 		ai_chance = { 
 			factor = 100
 		}
-		#custom_effect_tooltip = 
 		ENG = { end_puppet = ROOT }
 		if = {
 			limit = {
@@ -190,12 +191,15 @@ country_event = {
 	}
 }
 
-#Puppets Leave the UK
+
+#########################################################################
+# Puppets Leave the UK
+#########################################################################
 country_event = {
 	id = DH_commonwealth.2
 	title = DH_commonwealth.2.t
 	desc = DH_commonwealth.2.d
-	picture = GFX_report_event_british_inspect_troops #placeholder
+	picture = GFX_report_event_british_inspect_troops 
 	fire_only_once = yes
 	
 	is_triggered_only = yes
@@ -205,12 +209,15 @@ country_event = {
 	}
 }
 
-#Puppets Join the Fascist!
+
+#########################################################################
+# Puppets Join the Fascist!
+#########################################################################
 country_event = {
 	id = DH_commonwealth.3
 	title = DH_commonwealth.3.t
 	desc = DH_commonwealth.3.d
-	picture = GFX_report_event_british_inspect_troops #placeholder
+	picture = GFX_report_event_british_inspect_troops 
 	fire_only_once = yes
 	
 	is_triggered_only = yes

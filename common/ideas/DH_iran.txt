@@ -1,0 +1,10 @@
+ideas = {
+
+	country = {
+		PER_german_academic_influence = {
+			modifier = {
+				research_time_factor = -0.05
+			}
+		}
+	}
+}

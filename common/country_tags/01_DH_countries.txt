@@ -1,4 +1,3 @@
-
 VIC = "countries/Vichy France.txt"
 EGL = "countries/England.txt"
 WAL = "countries/Wales.txt"

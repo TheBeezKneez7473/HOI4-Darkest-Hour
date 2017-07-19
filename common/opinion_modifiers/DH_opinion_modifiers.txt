@@ -1,0 +1,25 @@
+opinion_modifiers = {
+	TUR_germany_pact = {
+		trade = yes
+		value = 20
+	}
+	TUR_anti_german_trade = {
+		trade = yes
+		value = -30
+	}
+	GER_anti_turkey_trade = {
+		trade = yes
+		value = -30
+	}
+	GER_refused_staatenbund = {
+		value = -15
+		months = 12
+		decay = 1
+	}
+	fascism_leanings_good = {
+		value = 30
+	}	
+	GER_partitioned_yugoslavia_hun = { value = 10 }
+
+	GER_partitioned_yugoslavia_ita = { value = 15 }
+}

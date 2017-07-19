@@ -1,0 +1,97 @@
+ideas = {
+
+
+#########################################################################
+#  Head of Governement
+#########################################################################
+	head_of_govt = {
+		
+		###Generic head of govt		
+		generic_head_of_govt = {
+
+			allowed = {
+				NOT = { has_ministers = yes }
+			}
+
+			available = {
+				always = no
+			}
+
+			traits = { }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+	}
+#########################################################################
+#  Foreign Minister
+#########################################################################
+	foreign_minister = {
+		###Generic Foreign Minister	
+		generic_foreign_minister = {
+
+			allowed = {
+				NOT = { has_ministers = yes }
+			}
+
+			available = {
+
+			}
+
+			traits = { }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+
+		
+	}
+#########################################################################
+#  Security Minister
+#########################################################################
+	security_minister = {
+		###Generic Minister of Security
+		generic_security_minister = {
+
+			allowed = {
+				NOT = { has_ministers = yes }
+			}
+
+			available = {
+
+			}
+
+			traits = { }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}		
+	}
+#########################################################################
+#  Armaments Minister // SM
+#########################################################################
+	armaments_minister = {
+		### Heinrich Himmler
+		generic_armaments_minister = {
+
+			allowed = {
+				NOT = { has_ministers = yes }
+			}
+
+			available = {
+
+			}
+
+			traits = { }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+#########################################################################
+#########################################################################	
+}

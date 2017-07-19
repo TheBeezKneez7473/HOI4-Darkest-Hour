@@ -1,0 +1,9 @@
+
+EGL_GER_RP = {
+    color = rgb { 110 110 110 }
+    color_ui = rgb { 185 170 167 }
+}
+SCO_GER_RP = {
+    color = rgb { 110 110 110 }
+    color_ui = rgb { 185 170 167 }
+}

@@ -120,6 +120,13 @@ country_event = {
 	# Nikita S. Khrushchev
 	option = { 
 		name = DH_soviet.4.a
+		ai_chance = {
+			factor = 80
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 100
+			}
+		}
 		create_country_leader = { 
 			name = "Nikita S. Khrushchev" 
 			desc = "POLITICS_PETER_II_DESC" 
@@ -129,9 +136,16 @@ country_event = {
 			traits = { } 
 		}			
 	}
-	# Georgy Malenkov
+	# Georgy Malenkov10
 	option = { 
 		name = DH_soviet.4.b
+		ai_chance = {
+			factor = 10
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
 		create_country_leader = { 
 			name = "Georgy Malenkov" 
 			desc = "POLITICS_PETER_II_DESC" 
@@ -141,13 +155,23 @@ country_event = {
 			traits = { } 
 		}	
 	}	
-	# Lavrenti P. Beria
-	option = { 
+	# Lavrenti P. Beria10
+	option = {
 		name = DH_soviet.4.c
-	}	
+		ai_chance = {
+			factor  = 10
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
 	# Georgy Zhukov
 	option = { 
 		name = DH_soviet.4.d
+		ai_chance = {
+			factor  = 0
+		}
 		create_country_leader = { 
 			name = "Georgy Zhukov" 
 			desc = "POLITICS_PETER_II_DESC" 
@@ -174,11 +198,47 @@ country_event = {
 	# Let's bury the west
 	option = { 
 		name = DH_soviet.5.a
+		ai_chance = {
+			factor = 80
+			modifier = {
+				OR = {
+					has_idea = officers_purged
+					has_idea = officers_purged_2
+					has_idea = officers_purged_3
+					has_idea = officers_purged_4
+					has_idea = officers_purged_5
+					has_idea = officers_purged_6
+					has_idea = officers_purged_7
+					has_idea = officers_purged_8
+					has_idea = officers_purged_9
+					has_idea = officers_purged_10
+				}
+				factor = 0
+			}
+		}
 		country_event = { days = 31 id = DH_germany.25 }
 	}
 	# We need more time!
 	option = { 
 		name = DH_soviet.5.b
+		ai_chance = {
+			factor = 20
+			modifier = {
+				OR = {
+					has_idea = officers_purged
+					has_idea = officers_purged_2
+					has_idea = officers_purged_3
+					has_idea = officers_purged_4
+					has_idea = officers_purged_5
+					has_idea = officers_purged_6
+					has_idea = officers_purged_7
+					has_idea = officers_purged_8
+					has_idea = officers_purged_9
+					has_idea = officers_purged_10
+				}
+				factor = 100
+			}
+		}
 		country_event = { days = 31 id = DH_germany.26 }
 	}	
 }

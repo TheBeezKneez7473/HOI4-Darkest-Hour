@@ -138,6 +138,9 @@ country_event = { #Cyprus offer
 
 	option = { #accept cyprus
 		name = DH_italy.3.a
+		ai_chance = {
+			factor = 100
+		}
 		ITA = {
 			transfer_state = 183
 		}
@@ -146,6 +149,9 @@ country_event = { #Cyprus offer
 
 	option = { #refuse cyprus
 		name = DH_italy.3.b
+		ai_chance = {
+			factor = 0
+		}
 		TUR = { country_event = { hours = 6 id = DH_turkey.2 }}
 	}
 }

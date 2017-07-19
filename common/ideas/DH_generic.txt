@@ -1,0 +1,24 @@
+ideas = {
+	# Special ones that can be applied on other countries through focus system.
+	country = {
+	
+		ira_influence = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+
+			modifier = {
+				fascism_drift = 0.05
+				fascism_acceptance = 85
+			}
+		}
+	}
+}

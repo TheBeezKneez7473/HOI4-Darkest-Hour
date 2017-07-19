@@ -1,5 +1,5 @@
 ﻿###########################
-# Realism Overhaul Specials
+# Darkest Hour Specials
 ###########################
 
 add_namespace = DH_germany_special
@@ -125,7 +125,7 @@ country_event = {
 	desc = DH_soviet_special.1.d
 	picture = GFX_news_event_002
 	fire_only_once = yes
-	hidden = yes 
+	#hidden = yes 
 	
 	trigger = {
 		tag = SOV
@@ -143,13 +143,12 @@ country_event = {
 	immediate = {
 		set_global_flag = german_betrayal
 		GER = { remove_opinion_modifier = { target = SOV modifier = MR_pact }}
-		add_timed_idea = { idea = SOV_german_betrayal days = 25 }		
+		SOV = { add_timed_idea = { idea = SOV_german_betrayal days = 15 }}
 	}
 	
 	#For the Rodina
 	option = { 
 		name = DH_soviet_special.1.a
-
 	}
 }
 

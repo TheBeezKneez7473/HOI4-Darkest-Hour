@@ -26,13 +26,19 @@ country_event = {
 
 	#Demand Cape Verde
     option = {
-      name = DH_germany.1.a
-      POR = { country_event = { hours = 6 id = DH_portugal.1 }}
+		ai_chance = {
+			factor = 66
+		}
+		name = DH_germany.1.a
+		POR = { country_event = { hours = 6 id = DH_portugal.1 }}
     }
     #Demand Cape Verde and Azores
     option = {
-      name = DH_germany.1.b
-      POR = { country_event = { hours = 6 id = DH_portugal.2 }}
+		ai_chance = {
+			factor = 34
+		}
+		name = DH_germany.1.b
+		POR = { country_event = { hours = 6 id = DH_portugal.2 }}
     }
 }
 
@@ -75,6 +81,15 @@ country_event = {
 	#call spain
 	option = {
 		name = DH_germany.3.a
+		ai_chance = {
+			factor = 80
+			modifier = {
+				SPR = {
+					is_in_faction_with = GER
+				}
+				factor = 1000
+			}
+		}
 		add_state_claim = 702
 		add_opinion_modifier = { target = POR modifier = protest_action_light }
 		if = {
@@ -87,6 +102,9 @@ country_event = {
 	}
 	option = { #back off
 		name = DH_germany.3.b
+		ai_chance = {
+			factor = 20
+		}
 		add_state_claim = 702
 		add_opinion_modifier = { target = POR modifier = protest_action_light }
 	}
@@ -134,6 +152,15 @@ country_event = {
 	#
 	option = {	#call spain
 		name = DH_germany.5.a
+		ai_chance = {
+			factor = 80
+			modifier = {
+				SPR = {
+					is_in_faction_with = GER
+				}
+				factor = 1000
+			}
+		}
 		add_state_claim = 702
 		add_state_claim = 698
 		add_opinion_modifier = { target = POR modifier = protest_action_light }
@@ -147,6 +174,9 @@ country_event = {
 	}
 	option = { #back off
 		name = DH_germany.5.b
+		ai_chance = {
+			factor = 20
+		}
 		add_state_claim = 702
 		add_state_claim = 698
 		add_opinion_modifier = { target = POR modifier = protest_action_light }
@@ -417,14 +447,19 @@ country_event = {
 	# Back up Quisling
 	option = { 
 		name = DH_germany.14.a
+		ai_chance = {
+			factor = 0
+		}
 		NOR = { country_event = { id = DH_norway.1 days = 1 }}
 		add_political_power = -100
 	}
 	
 	# Germany doesn't need him
 	option = { 
+		ai_chance = {
+			factor = 100
+		}
 		name = DH_germany.14.b
-
 	}	
 }
 
@@ -447,7 +482,7 @@ country_event = {
 				has_government = fascism
 			}
 			NOR = {
-				is_puppet_of = GER
+				is_subject_of = GER
 				is_ai = yes
 			}
         }
@@ -479,7 +514,7 @@ country_event = {
 				has_government = fascism
 			}
 			DEN = {
-				is_puppet_of = GER
+				is_subject_of = GER
 				is_ai = yes
 			}
         }
@@ -511,7 +546,7 @@ country_event = {
 				has_government = fascism
 			}
 			ICE = {
-				is_puppet_of = GER
+				is_subject_of = GER
 				is_ai = yes
 			}
         }
@@ -543,7 +578,7 @@ country_event = {
 				has_government = fascism
 			}
 			SWE = {
-				is_puppet_of = GER
+				is_subject_of = GER
 				is_ai = yes
 			}
         }
@@ -780,7 +815,7 @@ country_event = {
 					NOT = {
 						OR = {
 							is_in_faction_with = FRA
-							FRA = {  is_puppet_of = SOV }
+							FRA = {  is_subject_of = SOV }
 						}
 					}					
 				}	
@@ -792,7 +827,7 @@ country_event = {
 					NOT = {
 						OR = {
 							is_in_faction_with = ENG
-							ENG = {  is_puppet_of = SOV }
+							ENG = {  is_subject_of = SOV }
 						}
 					}					
 				}	
@@ -804,7 +839,7 @@ country_event = {
 					NOT = {
 						OR = {
 							is_in_faction_with = USA
-							USA = {  is_puppet_of = SOV }
+							USA = {  is_subject_of = SOV }
 						}
 					}					
 				}	
@@ -816,7 +851,7 @@ country_event = {
 					NOT = {
 						OR = {
 							is_in_faction_with = JAP
-							JAP = {  is_puppet_of = SOV }
+							JAP = {  is_subject_of = SOV }
 						}
 					}						
 				}
@@ -828,7 +863,7 @@ country_event = {
 					NOT = {
 						OR = {
 							is_in_faction_with = ITA
-							ITA = {  is_puppet_of = SOV }
+							ITA = {  is_subject_of = SOV }
 						}
 					}						
 				}	
@@ -840,7 +875,7 @@ country_event = {
 					NOT = {
 						OR = {
 							is_in_faction_with = POL
-							POL = {  is_puppet_of = SOV }
+							POL = {  is_subject_of = SOV }
 
 						}
 					}						
@@ -857,7 +892,7 @@ country_event = {
 					NOT = {
 						OR = {
 							is_in_faction_with = FRA
-							FRA = {  is_puppet_of = GER }
+							FRA = {  is_subject_of = GER }
 						}
 					}					
 				}	
@@ -869,7 +904,7 @@ country_event = {
 					NOT = {
 						OR = {
 							is_in_faction_with = ENG
-							ENG = {  is_puppet_of = GER }
+							ENG = {  is_subject_of = GER }
 						}
 					}					
 				}	
@@ -881,7 +916,7 @@ country_event = {
 					NOT = {
 						OR = {
 							is_in_faction_with = USA
-							USA = {  is_puppet_of = GER }
+							USA = {  is_subject_of = GER }
 						}
 					}					
 				}	
@@ -894,7 +929,7 @@ country_event = {
 					NOT = {
 						OR = {
 							is_in_faction_with = ITA
-							ITA = {  is_puppet_of = GER }
+							ITA = {  is_subject_of = GER }
 						}
 					}						
 				}	
@@ -906,7 +941,7 @@ country_event = {
 					NOT = {
 						OR = {
 							is_in_faction_with = POL
-							POL = {  is_puppet_of = GER }
+							POL = {  is_subject_of = GER }
 
 						}
 					}						
@@ -931,21 +966,30 @@ country_event = {
 
 	
 	# Give them 6 months
-	option = { 
+	option = {
+		ai_chance = {
+			factor = 0
+		}
 		name = DH_germany.26.a
 		SOV = {
 			country_event = { months = 6 id = DH_soviet.4 }	
 		}
 	}	
 	# Give them3 months
-	option = { 
+	option = {
+		ai_chance = {
+			factor = 100
+		}
 		name = DH_germany.26.b
 		SOV = {
 			country_event = { months = 3 id = DH_soviet.4 }	
 		}
 	}
 	# This Alliance isn't working
-	option = { 
+	option = {
+		ai_chance = {
+			factor = 0
+		}
 		name = DH_germany.26.c
 		dismantle_faction = yes
 		create_wargoal = { type = annex_everything target = SOV }
@@ -968,18 +1012,27 @@ country_event = {
 	#Anschlusszeit!
     option = {
 		name = DH_germany.27.a
+		ai_chance = {
+			factor = 100
+		}
 		AUS = { country_event = { hours = 6 id = DH_austria.1 }}
 		custom_effect_tooltip = germany_anschluss	  
     }
     #Let's give them some freedom
     option = {
-		name = DH_germany.27.b  
+		name = DH_germany.27.b 
+		ai_chance = {
+			factor = 0
+		}
 		AUS = { country_event = { hours = 6 id = DH_austria.2 }}	  
 		custom_effect_tooltip = germany_anschluss_puppet
     }
     #Propose an alliance
     option = {
 		name = DH_germany.27.c
+		ai_chance = {
+			factor = 0
+		}
 		AUS = { country_event = { hours = 6 id = DH_austria.3 }} 
     }	
 	
@@ -1026,7 +1079,7 @@ country_event = {
 				has_government = fascism
 			}
 			AUS = {
-				is_puppet_of = GER
+				is_subject_of = GER
 				is_ai = yes
 			}
         }
@@ -1082,11 +1135,15 @@ country_event = {
 				}
 				factor = 0.9
 			}
-
+			modifier = {
+				ROOT = {
+					is_in_faction_with = GER
+				}
+				factor = 1000
+			}
 		}
 		GER = { add_to_faction = ROOT}
 		add_ideas = GER_staatenbund
-
 	}
 
 	#Decline
@@ -1116,8 +1173,6 @@ country_event = {
 				GER = { has_guaranteed = SWE }
 				factor = 0.9
 			}
-
-
 		}
 		GER = {
 			add_opinion_modifier = {
@@ -1230,13 +1285,14 @@ country_event = {
 				transfer_state = 728 # Guangzhouwan
 				transfer_state = 730 # St Pierre et Miquelon
 				transfer_state = 734 # Nendo
-				transfer_state = 735 # Savoy								
+				transfer_state = 735 # Savoy
+				transfer_state = 745 # Haute Savoie
 				every_owned_state = {
 					limit = {
 						is_core_of = VIC				
 					}
 					add_core_of = FRA
-				}							
+				}
 		}
 		FRA = {
 			transfer_state = 539 # Gabon				
@@ -1304,7 +1360,7 @@ country_event = { #Italy refused
 	option = {
 		name = DH_germany.33.a
 		set_cosmetic_tag = GER_GREATER
-		64 = { set_state_name = "Germania" }
+		set_province_name = { id = 6521 name = "Germania" }
 	}
 }
 
@@ -1331,181 +1387,150 @@ country_event = { #Ireland refused
 #  Fate of Brittania
 #########################################################################
 country_event = {
-        id = DH_germany.35
-        title = DH_germany.35.t
-        desc = DH_germany.35.d 
-        picture = GFX_report_event_german_troops
-        
-        fire_only_once = yes
- 
-        trigger = {
-             tag = GER
-             ENG = { has_capitulated = yes }
-		}
+	id = DH_germany.35
+    title = DH_germany.35.t
+	desc = DH_germany.35.d 
+	picture = GFX_report_event_german_troops
 
-        mean_time_to_happen = {
-             days = 1
-        }
+    fire_only_once = yes
 
-        option = {  # A  Fascist Regime
-			#custom_effect_tooltip = dh.1.tt
-            name = DH_germany.35.a
-            hidden_effect = {
-				ENG = {
-					every_owned_state = {
-						limit = {
-							is_core_of = ENG				
-						}
-						add_core_of = EGL
-					}
-				}
-				EGL = {
-					transfer_state = 119
-					transfer_state = 120
-					transfer_state = 136
-					transfer_state = 121
-					transfer_state = 133
-					transfer_state = 131
-					transfer_state = 130
-					transfer_state = 132
-					transfer_state = 122
-					transfer_state = 128
-					transfer_state = 129
-					transfer_state = 125
-					transfer_state = 126
-					transfer_state = 127
-					transfer_state = 338
-					transfer_state = 123
-				}
-				EGL = { set_political_party = { ideology = fascism popularity = 1 } }
-				EGL = { set_politics = { ruling_party = fascism elections_allowed = no } }
-				GER = { add_to_faction = EGL }
-				EGL = {
-					add_ai_strategy = {
-						type = alliance
-						id = "GER"
-						value = 200
-					}
-				}
-				EGL = { set_country_flag = whole_friendly_regime }
+	trigger = {
+        tag = GER
+        ENG = { has_capitulated = yes }
+	}
+
+    mean_time_to_happen = {
+		days = 1
+    }
+
+    option = {  # A  Fascist Regime
+		custom_effect_tooltip =  "Install a friendly regime."
+        name = DH_germany.35.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				date < 1941.1.1.1
+				factor = 1000
+			}
+			modifier = {
+				date > 1941.1.1.1
+				factor = 0
 			}
 		}
+        hidden_effect = {
+			ENG = {
+				every_owned_state = {
+					limit = {
+						is_core_of = ENG				
+					}
+					add_core_of = EGL
+				}
+			}
+			EGL = {
+				transfer_state = 119
+				transfer_state = 120
+				transfer_state = 136
+				transfer_state = 121
+				transfer_state = 133
+				transfer_state = 131
+				transfer_state = 130
+				transfer_state = 132
+				transfer_state = 122
+				transfer_state = 128
+				transfer_state = 129
+				transfer_state = 125
+				transfer_state = 126
+				transfer_state = 127
+				transfer_state = 338
+				transfer_state = 123
+			}
+			EGL = { set_political_party = { ideology = fascism popularity = 1 } }
+			EGL = { set_politics = { ruling_party = fascism elections_allowed = no } }
+			GER = { add_to_faction = EGL }
+			EGL = {
+				add_ai_strategy = {
+					type = alliance
+					id = "GER"
+					value = 200
+				}
+			}
+			EGL = { set_country_flag = whole_friendly_regime }
+		}
+	}
           
-        option = { # Puppet the Isles
-            name = DH_germany.35.b
-			#custom_effect_tooltip = dh.2.tt
-               hidden_effect = {
-					127 = { add_core_of = EGL }
-					123 = { add_core_of = EGL }
-					122 = { add_core_of = EGL }
-					126 = { add_core_of = EGL }
-					125 = { add_core_of = EGL }
-					338 = { add_core_of = EGL }
-					128 = { add_core_of = EGL }
-					129 = { add_core_of = EGL }
-					130 = { add_core_of = EGL }
-					132 = { add_core_of = EGL }
-					131 = { add_core_of = EGL }
-					133 = { add_core_of = SCO }
-					121 = { add_core_of = SCO }
-					136 = { add_core_of = SCO }
-					120 = { add_core_of = SCO }
-					ENG = { release = SCO }
-					ENG = { release = EGL }
-					SCO = { set_political_party = { ideology = fascism popularity = 1 } }
-					EGL = { set_political_party = { ideology = fascism popularity = 1 } }              
-					SCO = { set_politics = { ruling_party = fascism elections_allowed = no } }
-					EGL = { set_politics = { ruling_party = fascism elections_allowed = no } }
-					IRE = { transfer_state = 119 }
-					CAN = { transfer_state = 332 }
-					CAN = { transfer_state = 331 }
-					GER = {
-						if = {
-							limit = {
-								has_dlc = "Together for Victory"
-							}
-							set_autonomy = {
-								target = SCO
-								autonomous_state = autonomy_satellite
-							}
-							else = {
-								puppet = SCO
-							}
-						}
-					}
-					GER = { 	
-						if = {
-							limit = {
-								has_dlc = "Together for Victory"
-							}
-							set_autonomy = {
-								target = EGL
-								autonomous_state = autonomy_satellite
-							}
-							else = {
-								puppet = EGL
-							}
-						}
-					}
-					EGL = { set_cosmetic_tag = EGL_GER_RP }
-					SCO = { set_cosmetic_tag = SCO_GER_RP }
-					EGL = { set_country_flag = friendly_regime }
-				}
+    option = { # Puppet the Isles
+        name = DH_germany.35.b
+		custom_effect_tooltip = "Establish the Reichsprotectorate in the Isles."
+		ai_chance = {
+			factor = 50
+			modifier = {
+				date < 1941.1.1.1
+				factor = 1000
+			}
+			modifier = {
+				date > 1941.1.1.1
+				factor = 0
+			}
 		}
-}
-
-######JAP = { transfer_state = 755 }#######
-
-
-#########################################################################
-#  Fate of British Malaya
-#########################################################################
-country_event = {
-         id = DH_germany.36
-         title = DH_germany.36.t
-         desc = DH_germany.36.d 
-         picture = GFX_report_event_japanese_army_parade
-         
-          fire_only_once = yes
- 
-         trigger = {
-              tag = JAP
-              ENG = { has_capitulated = yes }
-              MAL = { 
-                }
-		 }	
-        mean_time_to_happen = {
-             days = 1
-        }
-
-        option = {
-            name = DH_germany.36.a
-            custom_effect_tooltip = "The State of Malaysia becomes a member of the Japanese co-prosperity sphere and Singapore becomes a Japanese harbor."
-     
-			hidden_effect = {
-				JAP = { 	
-					transfer_state = 755
+        hidden_effect = {
+			127 = { add_core_of = EGL }
+			123 = { add_core_of = EGL }
+			122 = { add_core_of = EGL }
+			126 = { add_core_of = EGL }
+			125 = { add_core_of = EGL }
+			338 = { add_core_of = EGL }
+			128 = { add_core_of = EGL }
+			129 = { add_core_of = EGL }
+			130 = { add_core_of = EGL }
+			132 = { add_core_of = EGL }
+			131 = { add_core_of = EGL }
+			133 = { add_core_of = SCO }
+			121 = { add_core_of = SCO }
+			136 = { add_core_of = SCO }
+			120 = { add_core_of = SCO }
+			ENG = { release = SCO }
+			ENG = { release = EGL }
+			SCO = { set_political_party = { ideology = fascism popularity = 1 } }
+			EGL = { set_political_party = { ideology = fascism popularity = 1 } }              
+			SCO = { set_politics = { ruling_party = fascism elections_allowed = no } }
+			EGL = { set_politics = { ruling_party = fascism elections_allowed = no } }
+			IRE = { transfer_state = 119 }
+			CAN = { transfer_state = 332 }
+			CAN = { transfer_state = 331 }
+			GER = {
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+					}
 					set_autonomy = {
-						target = MAL
+						target = SCO
 						autonomous_state = autonomy_satellite
-					}	 
-				}	
+					}
+					else = {
+						puppet = SCO
+					}
+				}
 			}
+			GER = { 	
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+					}
+					set_autonomy = {
+						target = EGL
+						autonomous_state = autonomy_satellite
+					}
+					else = {
+						puppet = EGL
+					}
+				}
+			}
+			EGL = { set_cosmetic_tag = EGL_GER_RP }
+			SCO = { set_cosmetic_tag = SCO_GER_RP }
+			EGL = { set_country_flag = friendly_regime }
 		}
-
-        option = {
-            name = DH_germany.36.b
-            custom_effect_tooltip = "The State of Malaysia will break free from their opressors. The Japanese will gain +100 political power"
-            hidden_effect = { 
-               add_political_power = 100
-               release_puppet = MAL
-			}
-        }
- }
-
-
-##-------------------------------------------------------------------------------------------------------------------------------------------------
-##-------------------------------------------------------------------------------------------------------------------------------------------------
+	}
+}
 
 #########################################################################
 #  RK  Ostland
@@ -1517,36 +1542,36 @@ country_event = {
 	picture = GFX_report_event_001
 	fire_only_once = yes
 	
-        trigger = {
-			tag = GER
-			GER = { has_government = fascism }
-			ROS = { exists = no }
-		
-			LIT = { exists = no }
-			EST = { exists = no }		
-			LAT = { exists = no }	
-			GER = { 
-				has_full_control_of_state = 13 
-				has_full_control_of_state = 12
-				has_full_control_of_state = 11
-				has_full_control_of_state = 96
-				has_full_control_of_state = 206		
-				has_full_control_of_state = 191
-				has_full_control_of_state = 190			
-				has_full_control_of_state = 189
-				has_full_control_of_state = 95
-				has_full_control_of_state = 204				
-			}	
-        }
-
+	trigger = {
+		tag = GER
+		GER = { has_government = fascism }
+		ROS = { exists = no }
+		LIT = { exists = no }
+		EST = { exists = no }		
+		LAT = { exists = no }	
+		GER = { 
+			has_full_control_of_state = 13 
+			has_full_control_of_state = 12
+			has_full_control_of_state = 11
+			has_full_control_of_state = 96
+			has_full_control_of_state = 206		
+			has_full_control_of_state = 191
+			has_full_control_of_state = 190			
+			has_full_control_of_state = 189
+			has_full_control_of_state = 95
+			has_full_control_of_state = 204				
+		}	
+	}
 	
 #Establish RK Ostland
 	option = { 
 		name = DH_germany_rk.1.a
+		ai_chance = {
+			factor = 100
+		}
 		hidden_effect = {
 			puppet = ROS
 			ROS = {
-			
 				transfer_state = 13 
 				transfer_state = 12
 				transfer_state = 11
@@ -1557,7 +1582,6 @@ country_event = {
 				transfer_state = 189
 				transfer_state = 95
 				transfer_state = 204				
-		
 			}	
 		}
 		custom_effect_tooltip = germany_establish_rk_ostland		
@@ -1565,6 +1589,9 @@ country_event = {
 	#Establish direct military occupation
 	option = { 
 		name = DH_germany_rk.1.b
+		ai_chance = {
+			factor = 0
+		}
 		custom_effect_tooltip = germany_rk_military_occupation
 	}	
 }
@@ -1579,79 +1606,80 @@ country_event = {
 	picture = GFX_report_event_001
 	fire_only_once = yes
 	
-        trigger = {
-			tag = GER
-			GER = { has_government = fascism }
-			RUK = { exists = no }
-			GER = { 
-				has_full_control_of_state = 94 
-				has_full_control_of_state = 93
-				has_full_control_of_state = 199
-				has_full_control_of_state = 201
-				has_full_control_of_state = 194		
-				has_full_control_of_state = 202
-				has_full_control_of_state = 203			
-				has_full_control_of_state = 197
-				has_full_control_of_state = 196
-				has_full_control_of_state = 200		
-				has_full_control_of_state = 226				
-			}	
-        }
-
+	trigger = {
+		tag = GER
+		GER = { has_government = fascism }
+		RUK = { exists = no }
+		GER = { 
+			has_full_control_of_state = 94 
+			has_full_control_of_state = 93
+			has_full_control_of_state = 199
+			has_full_control_of_state = 201
+			has_full_control_of_state = 194		
+			has_full_control_of_state = 202
+			has_full_control_of_state = 203			
+			has_full_control_of_state = 197
+			has_full_control_of_state = 196
+			has_full_control_of_state = 200		
+			has_full_control_of_state = 226				
+		}	
+	}
 	
 # Establish RK Ukraine
 	option = { 
 		name = DH_germany_rk.2.a
+		ai_chance = {
+			factor = 100
+		}
 		hidden_effect = {
-			
 			puppet = RUK
 			RUK = {
-			
-				transfer_state = 94 
+				transfer_state = 94
 				transfer_state = 93
 				transfer_state = 199
 				transfer_state = 201
-				transfer_state = 194		
+				transfer_state = 194
 				transfer_state = 202
-				transfer_state = 203			
+				transfer_state = 203
 				transfer_state = 197
 				transfer_state = 196
-				transfer_state = 200		
-				transfer_state = 226		
+				transfer_state = 200
+				transfer_state = 226
 			}
-#-------- Odessa 		
+#-------- Odessa
 			if = {
 				limit = {
-					GER = { 
-						has_full_control_of_state = 192		
-					}	
-				}	
-				RUK = { 
+					GER = {
+						has_full_control_of_state = 192	
+					}
+				}
+				RUK = {
 					transfer_state = 192
-				}					
+				}				
 			}
 			if = {
 				limit = {
-					GER = { 
-						has_full_control_of_state = 198		
-					}	
-				}	
-				RUK = { 
+					GER = {
+						has_full_control_of_state = 198
+					}
+				}
+				RUK = {
 					transfer_state = 198
-				}					
-			}			
-#----------------------				
+				}
+			}
+#----------------------	
 		}
-		custom_effect_tooltip = germany_establish_rk_ukraine	
+		custom_effect_tooltip = germany_establish_rk_ukraine
 	}
 	#Establish direct military occupation
-	option = { 
+	option = {
 		name = DH_germany_rk.2.b
+		ai_chance = {
+			factor = 0
+		}
 		custom_effect_tooltip = germany_rk_military_occupation		
-	}	
+	}
 }
-
-
 
 #########################################################################
 #  RK  Moskowien
@@ -1663,63 +1691,63 @@ country_event = {
 	picture = GFX_report_event_001
 	fire_only_once = yes
 	
-        trigger = {
-			tag = GER
-			GER = { has_government = fascism }
-			RMO = { exists = no }
-			ROS = { exists = yes has_government = fascism }	
-			RUK = { exists = yes has_government = fascism }			
-			GER = { 
-				has_full_control_of_state = 262
-				has_full_control_of_state = 581
-				has_full_control_of_state = 573
-				has_full_control_of_state = 582
-				has_full_control_of_state = 652		
-				has_full_control_of_state = 651
-				has_full_control_of_state = 398			
-				has_full_control_of_state = 397
-				has_full_control_of_state = 214
-				has_full_control_of_state = 351		
-				has_full_control_of_state = 400	
-				has_full_control_of_state = 399
-				has_full_control_of_state = 249
-				has_full_control_of_state = 251
-				has_full_control_of_state = 250
-				has_full_control_of_state = 256
-				has_full_control_of_state = 252
-				has_full_control_of_state = 253
-				has_full_control_of_state = 248
-				has_full_control_of_state = 247
-				has_full_control_of_state = 264
-				has_full_control_of_state = 244
-				has_full_control_of_state = 246		
-				has_full_control_of_state = 219	
-				has_full_control_of_state = 254	
-				has_full_control_of_state = 257
-				has_full_control_of_state = 255
-				has_full_control_of_state = 220		
-				has_full_control_of_state = 222
-				has_full_control_of_state = 223
-				has_full_control_of_state = 258
-				has_full_control_of_state = 224
-				has_full_control_of_state = 205
-				has_full_control_of_state = 242	
-				has_full_control_of_state = 243				
-			}	
-        }
-
+	trigger = {
+		tag = GER
+		GER = { has_government = fascism }
+		RMO = { exists = no }
+		ROS = { exists = yes has_government = fascism }	
+		RUK = { exists = yes has_government = fascism }			
+		GER = { 
+			has_full_control_of_state = 262
+			has_full_control_of_state = 581
+			has_full_control_of_state = 573
+			has_full_control_of_state = 582
+			has_full_control_of_state = 652		
+			has_full_control_of_state = 651
+			has_full_control_of_state = 398			
+			has_full_control_of_state = 397
+			has_full_control_of_state = 214
+			has_full_control_of_state = 351		
+			has_full_control_of_state = 400	
+			has_full_control_of_state = 399
+			has_full_control_of_state = 249
+			has_full_control_of_state = 251
+			has_full_control_of_state = 250
+			has_full_control_of_state = 256
+			has_full_control_of_state = 252
+			has_full_control_of_state = 253
+			has_full_control_of_state = 248
+			has_full_control_of_state = 247
+			has_full_control_of_state = 264
+			has_full_control_of_state = 244
+			has_full_control_of_state = 246		
+			has_full_control_of_state = 219	
+			has_full_control_of_state = 254	
+			has_full_control_of_state = 257
+			has_full_control_of_state = 255
+			has_full_control_of_state = 220		
+			has_full_control_of_state = 222
+			has_full_control_of_state = 223
+			has_full_control_of_state = 258
+			has_full_control_of_state = 224
+			has_full_control_of_state = 205
+			has_full_control_of_state = 242	
+			has_full_control_of_state = 243				
+		}	
+	}
 	
 # Establish RK Moskowien
 	option = { 
 		name = DH_germany_rk.3.a
+		ai_chance = {
+			factor = 100
+		}
 		hidden_effect = {
 			set_cosmetic_tag = GER_GREATER
 			puppet = RMO
-
 			RMO = {
 				add_popularity = { ideology = fascism popularity = 0.1 }
 				set_politics = { ruling_party = fascism elections_allowed = no }
-			
 				transfer_state = 262
 				transfer_state = 581
 				transfer_state = 573
@@ -1756,55 +1784,55 @@ country_event = {
 				transfer_state = 242	
 				transfer_state = 243			
 			}
-#Finland stuff		
+#Finland stuff
 			if = {
 				limit = {
-					GER = { 
-						has_full_control_of_state = 213		
-					}	
-				}	
-				RMO = { 
+					GER = {
+						has_full_control_of_state = 213
+					}
+				}
+				RMO = {
 					transfer_state = 213
-				}					
+				}
 			}
 			if = {
 				limit = {
-					GER = { 
-						has_full_control_of_state = 215		
-					}	
-				}	
-				RMO = { 
+					GER = {
+						has_full_control_of_state = 215
+					}
+				}
+				RMO = {
 					transfer_state = 215
-				}					
+				}
 			}
 			if = {
 				limit = {
-					GER = { 
-						has_full_control_of_state = 216				
-					}	
-				}	
-				RMO = { 
+					GER = {
+						has_full_control_of_state = 216
+					}
+				}
+				RMO = {
 					transfer_state = 216
-				}					
-			}	
-#----			
+				}
+			}
+#----
 #Expand RK Ostland
-			ROS = {			
-				transfer_state = 195 
+			ROS = {
+				transfer_state = 195
 				transfer_state = 208
 				transfer_state = 209
 				transfer_state = 263
-				transfer_state = 210		
+				transfer_state = 210
 				transfer_state = 207
-				transfer_state = 241						
+				transfer_state = 241
 			}
 #Expand  RK Ukraine		
-			RUK = {			
+			RUK = {
 				transfer_state = 193
 				transfer_state = 225
 				transfer_state = 259
 				transfer_state = 240
-				transfer_state = 221		
+				transfer_state = 221
 				transfer_state = 260
 				transfer_state = 228
 				transfer_state = 227
@@ -1819,10 +1847,13 @@ country_event = {
 		custom_effect_tooltip = germany_establish_rk_moscow	
 	}
 	#Establish direct military occupation
-	option = { 
+	option = {
 		name = DH_germany_rk.3.b
-		custom_effect_tooltip = germany_rk_military_occupation		
-	}	
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = germany_rk_military_occupation
+	}
 }
 
 #########################################################################
@@ -1835,43 +1866,44 @@ country_event = {
 	picture = GFX_report_event_001
 	fire_only_once = yes
 	
-        trigger = {
-			tag = GER
-			GER = { has_government = fascism }
-			RUK = { exists = yes has_government = fascism }	
-			RKA = { exists = no }
-			GER = { 
-				has_full_control_of_state = 236 
-				has_full_control_of_state = 237
-				has_full_control_of_state = 238
-				has_full_control_of_state = 234
-				has_full_control_of_state = 235		
-				has_full_control_of_state = 232
-				has_full_control_of_state = 233			
-				has_full_control_of_state = 231
-				has_full_control_of_state = 230
-				has_full_control_of_state = 229					
-			}	
-        }
-
+	trigger = {
+		tag = GER
+		GER = { has_government = fascism }
+		RUK = { exists = yes has_government = fascism }
+		RKA = { exists = no }
+		GER = {
+			has_full_control_of_state = 236
+			has_full_control_of_state = 237
+			has_full_control_of_state = 238
+			has_full_control_of_state = 234
+			has_full_control_of_state = 235
+			has_full_control_of_state = 232
+			has_full_control_of_state = 233
+			has_full_control_of_state = 231
+			has_full_control_of_state = 230
+			has_full_control_of_state = 229
+		}
+	}
 	
 # Establish RK Kaukasien
-	option = { 
+	option = {
 		name = DH_germany_rk.4.a
-		hidden_effect = {		
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
 			puppet = RKA
 			RKA = {
-			
-				transfer_state = 236 
+				transfer_state = 236
 				transfer_state = 237
 				transfer_state = 238
 				transfer_state = 234
-				transfer_state = 235		
+				transfer_state = 235
 				transfer_state = 232
-				transfer_state = 233			
+				transfer_state = 233
 				transfer_state = 231
 				transfer_state = 230
-				transfer_state = 229			
+				transfer_state = 229
 			}
 		}
 		custom_effect_tooltip = germany_establish_rk_kaukasus	
@@ -1879,10 +1911,12 @@ country_event = {
 	#Establish direct military occupation
 	option = { 
 		name = DH_germany_rk.4.b
-		custom_effect_tooltip = germany_rk_military_occupation		
-	}	
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = germany_rk_military_occupation
+	}
 }
-
 
 #########################################################################
 #  RK  Turkestan
@@ -1894,59 +1928,63 @@ country_event = {
 	picture = GFX_report_event_001
 	fire_only_once = yes
 	
-        trigger = {
-			tag = GER
-			GER = { has_government = fascism }
-			RMO = { exists = yes has_government = fascism }		
-			RKA = { exists = yes has_government = fascism }				
-			RTU = { exists = no }
-			GER = { 
-				has_full_control_of_state = 407 
-				has_full_control_of_state = 406
-				has_full_control_of_state = 587
-				has_full_control_of_state = 584
-				has_full_control_of_state = 585		
-				has_full_control_of_state = 402
-				has_full_control_of_state = 404			
-				has_full_control_of_state = 405
-				has_full_control_of_state = 742
-				has_full_control_of_state = 732	
-				has_full_control_of_state = 586
-				has_full_control_of_state = 589			
-				has_full_control_of_state = 401						
-			}	
-        }
-
+	trigger = {
+		tag = GER
+		GER = { has_government = fascism }
+		RMO = { exists = yes has_government = fascism }
+		RKA = { exists = yes has_government = fascism }
+		RTU = { exists = no }
+		GER = {
+			has_full_control_of_state = 407
+			has_full_control_of_state = 406
+			has_full_control_of_state = 587
+			has_full_control_of_state = 584
+			has_full_control_of_state = 585
+			has_full_control_of_state = 402
+			has_full_control_of_state = 404
+			has_full_control_of_state = 405
+			has_full_control_of_state = 742
+			has_full_control_of_state = 732
+			has_full_control_of_state = 586
+			has_full_control_of_state = 589
+			has_full_control_of_state = 401
+		}
+	}
 	
 # Establish RK Turkestan
-	option = { 
+	option = {
 		name = DH_germany_rk.5.a
-		hidden_effect = {		
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
 			puppet = RTU
 			RTU = {
-			
-				transfer_state = 407 
+				transfer_state = 407
 				transfer_state = 406
 				transfer_state = 587
 				transfer_state = 584
-				transfer_state = 585		
+				transfer_state = 585
 				transfer_state = 402
-				transfer_state = 404			
+				transfer_state = 404
 				transfer_state = 405
 				transfer_state = 742
-				transfer_state = 732	
+				transfer_state = 732
 				transfer_state = 586
 				transfer_state = 589
-				transfer_state = 401				
+				transfer_state = 401
 			}
 		}
-		custom_effect_tooltip = germany_establish_rk_kaukasus	
+		custom_effect_tooltip = germany_establish_rk_kaukasus
 	}
 	#Establish direct military occupation
-	option = { 
+	option = {
 		name = DH_germany_rk.5.b
-		custom_effect_tooltip = germany_rk_military_occupation		
-	}	
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = germany_rk_military_occupation
+	}
 }
 
 #########################################################################
@@ -1959,38 +1997,41 @@ country_event = {
 	picture = GFX_report_event_001
 	fire_only_once = yes
 	
-        trigger = {
-			tag = GER
-			GER = { has_government = fascism }	
-			ICE = { exists = no }
-			GER = { 
-				has_full_control_of_state = 100 		
-			}	
-        }
-
+	trigger = {
+		tag = GER
+		GER = { has_government = fascism }
+		ICE = { exists = no }
+		GER = {
+			has_full_control_of_state = 100
+		}
+	}
 	
 # Establish RK Iceland
-	option = { 
+	option = {
 		name = DH_germany_rk.6.a
-		hidden_effect = {		
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
 			puppet = ICE
 			ICE = {
 				add_popularity = { ideology = fascism popularity = 0.1 }
 				set_politics = { ruling_party = fascism elections_allowed = no }
 				set_cosmetic_tag = ICE_GER_RK
-
 				set_state_controller = 100
-				transfer_state = 100 
-				
+				transfer_state = 100
 			}
 		}
 		custom_effect_tooltip = germany_establish_rk_iceland
 	}
 	#Establish direct military occupation
-	option = { 
+	option = {
 		name = DH_germany_rk.6.b
-		custom_effect_tooltip = germany_rk_military_occupation		
-	}	
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = germany_rk_military_occupation
+	}
 }
 
 #########################################################################
@@ -2003,52 +2044,53 @@ country_event = {
 	picture = GFX_report_event_001
 	fire_only_once = yes
 	
-        trigger = {
-			tag = GER
-			GER = { has_government = fascism }	
-			SWE = { exists = no }
-			GER = { 
-				has_full_control_of_state = 666 		
-				has_full_control_of_state = 38 					
-				has_full_control_of_state = 141 					
-				has_full_control_of_state = 140 					
-				has_full_control_of_state = 139
-				has_full_control_of_state = 138
-				has_full_control_of_state = 124 					
-			}	
-        }
+	trigger = {
+		tag = GER
+		GER = { has_government = fascism }
+		SWE = { exists = no }
+		GER = {
+			has_full_control_of_state = 666
+			has_full_control_of_state = 38
+			has_full_control_of_state = 141
+			has_full_control_of_state = 140
+			has_full_control_of_state = 139
+			has_full_control_of_state = 138
+			has_full_control_of_state = 124
+		}
+	}
 
-	
 # Establish RK Schweland
-	option = { 
+	option = {
 		name = DH_germany_rk.7.a
-		hidden_effect = {		
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
 			puppet = SWE
 			SWE = {
 				add_popularity = { ideology = fascism popularity = 0.1 }
 				set_politics = { ruling_party = fascism elections_allowed = no }
 				set_cosmetic_tag = SWE_GER_RK
-			
-
-				transfer_state = 666 		
-				transfer_state = 38 					
-				transfer_state = 141 					
-				transfer_state = 140 					
+				transfer_state = 666
+				transfer_state = 38
+				transfer_state = 141
+				transfer_state = 140
 				transfer_state = 139
 				transfer_state = 138
-				transfer_state = 124 	
-				
+				transfer_state = 124
+				create_country_leader = { name = "Birger Furugård" desc = "POLITICS_ARNO_SCHICKEDANZ_DESC" picture = "Portrait_Germany_Arno_Schickedanz.dds" expire = "1963.2.19" ideology = nazism traits = { } }
 			}
-			
-			create_country_leader = { name = "Birger Furugård" desc = "POLITICS_ARNO_SCHICKEDANZ_DESC" picture = "Portrait_Germany_Arno_Schickedanz.dds" expire = "1963.2.19" ideology = nazism traits = { } }						
 		}
 		custom_effect_tooltip = germany_establish_rk_sweden
 	}
 	#Establish direct military occupation
-	option = { 
+	option = {
 		name = DH_germany_rk.7.b
-		custom_effect_tooltip = germany_rk_military_occupation		
-	}	
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = germany_rk_military_occupation
+	}
 }
 
 #########################################################################
@@ -2061,62 +2103,66 @@ country_event = {
 	picture = GFX_report_event_001
 	fire_only_once = yes
 	
-        trigger = {
-			tag = GER
-			GER = { has_government = fascism }	
-			RUR = { exists = no }
-			RMO = { exists = yes }				
-			GER = { 
-				has_full_control_of_state = 579 		
-				has_full_control_of_state = 580 					
-				has_full_control_of_state = 577 					
-				has_full_control_of_state = 653 					
-				has_full_control_of_state = 403
-				has_full_control_of_state = 571
-				has_full_control_of_state = 578 	
-				has_full_control_of_state = 572 					
-				has_full_control_of_state = 583
-				has_full_control_of_state = 590
-				has_full_control_of_state = 588 		
-				has_full_control_of_state = 40 
-				has_full_control_of_state = 654 
-				has_full_control_of_state = 569 
-				has_full_control_of_state = 570 
-				has_full_control_of_state = 568 			
-			}	
-        }
+	trigger = {
+		tag = GER
+		GER = { has_government = fascism }
+		RUR = { exists = no }
+		RMO = { exists = yes }
+		GER = {
+			has_full_control_of_state = 579
+			has_full_control_of_state = 580
+			has_full_control_of_state = 577
+			has_full_control_of_state = 653
+			has_full_control_of_state = 403
+			has_full_control_of_state = 571
+			has_full_control_of_state = 578
+			has_full_control_of_state = 572
+			has_full_control_of_state = 583
+			has_full_control_of_state = 590
+			has_full_control_of_state = 588
+			has_full_control_of_state = 40
+			has_full_control_of_state = 654
+			has_full_control_of_state = 569
+			has_full_control_of_state = 570
+			has_full_control_of_state = 568
+		}
+	}
 
-	
-# Establish RK Ural
-	option = { 
+	#Establish RK Ural
+	option = {
 		name = DH_germany_rk.8.a
-		hidden_effect = {		
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
 			puppet = RUR
 			RUR = {
-
-				transfer_state = 579 		
-				transfer_state = 580 					
-				transfer_state = 577 					
-				transfer_state = 653 					
+				transfer_state = 579
+				transfer_state = 580
+				transfer_state = 577
+				transfer_state = 653
 				transfer_state = 403
 				transfer_state = 571
-				transfer_state = 578 	
-				transfer_state = 572 					
+				transfer_state = 578
+				transfer_state = 572
 				transfer_state = 583
 				transfer_state = 590
-				transfer_state = 588 		
-				transfer_state = 40 
-				transfer_state = 654 
-				transfer_state = 569 
-				transfer_state = 570 
-				transfer_state = 568 				
-			}			
+				transfer_state = 588
+				transfer_state = 40
+				transfer_state = 654
+				transfer_state = 569
+				transfer_state = 570
+				transfer_state = 568
+			}
 		}
 		custom_effect_tooltip = germany_establish_rk_ural
 	}
 	#Establish direct military occupation
-	option = { 
+	option = {
 		name = DH_germany_rk.8.b
-		custom_effect_tooltip = germany_rk_military_occupation		
-	}	
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = germany_rk_military_occupation
+	}
 }

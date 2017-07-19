@@ -28,67 +28,67 @@ spriteTypes = {
 	}	
 
 ### Germany --------------------------------
+
 	SpriteType = {
 		name = "GFX_GER_basic_light_tank_medium"
-		texturefile = "gfx/interface/technologies/Armor/GER_Pz_I.dds"
+		texturefile = "gfx/interface/technologies/ger_basic_light_tank.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_GER_improved_light_tank_medium"
-		texturefile = "gfx/interface/technologies/Armor/GER_Pz_II.dds"
+		texturefile = "gfx/interface/technologies/ger_imp_light_tank.dds"
 	}	
 
 	SpriteType = {
 		name = "GFX_gwtank_medium"
-		texturefile = "gfx/interface/technologies/Armor/GER_Leichte.dds"
+		texturefile = "gfx/interface/technologies/gwtank.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_GER_advanced_light_tank_medium"
-		texturefile = "gfx/interface/technologies/Armor/GER_Pz_II.dds"
+		texturefile = "gfx/interface/technologies/ger_adv_light_tank.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_GER_basic_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/Armor/GER_Pz_III.dds"
+		texturefile = "gfx/interface/technologies/ger_basic_main_tank.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_GER_improved_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/Armor/GER_Pz_IV.dds"
+		texturefile = "gfx/interface/technologies/ger_imp_main_tank.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_GER_advanced_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/Armor/GER_Pz_V.dds"
+		texturefile = "gfx/interface/technologies/ger_adv_main_tank.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_GER_main_battle_tank_medium"
-		texturefile = "gfx/interface/technologies/Armor/GER_Panther_II.dds"	
-	}
+		texturefile = "gfx/interface/technologies/ger_main_battle_tank.dds"
+	}	
 
 	SpriteType = {
 		name = "GFX_GER_basic_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/Armor/GER_Nbw.dds"
+		texturefile = "gfx/interface/technologies/ger_basic_heavy_tank.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_GER_improved_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/Armor/GER_Pz_VI.dds"
+		texturefile = "gfx/interface/technologies/ger_imp_heavy_tank.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_GER_advanced_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/Armor/GER_Pz_VII.dds"
-	}	
+		texturefile = "gfx/interface/technologies/ger_adv_heavy_tank.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_GER_super_heavy_tank_medium"
 		texturefile = "gfx/interface/technologies/ger_superheavy_tank.dds"
 	}
 
-	
 	SpriteType = {
 		name = "GFX_GER_improved_main_battle_tank_medium"
 		texturefile = "gfx/interface/technologies/Armor/GER_E-50.dds"	
