@@ -399,6 +399,17 @@
  DH_iran.3.d:0 "It seems the Persians are not so keen on their Aryan kinship after all. They have rejected the German-Iranian Friendship Treaty, fearing that allowing Germany to influence their academia will bring harm to their international situation. Perhaps they will wake up to their geo-political reality some other time."
  DH_iran.3.a:0 "Disappointing"
  
+  ###### Japanese events----------------------------------
+ DH_japan.1.t:0 "Surrender to China?"
+ DH_japan.1.d:0 "We have been defeated, shamed, and dishonoured. Our dreams and ambitions have been crushed and the people are growing restless as we have wasted supplies on a war that we have now lost. We can still regain some dignity if we surrender to China."
+ DH_japan.1.a:0 "We can no longer afford a war with China, let us surrender."
+ DH_japan.1.b:0 "We will not be humiliated, continue the war."
+ 
+ DH_japan.2.t:0 "Surrender to the PRC?"
+ DH_japan.2.d:0 "We have been defeated, shamed, and dishonoured. Our dreams and ambitions have been crushed and the people are growing restless as we have wasted supplies on a war that we have now lost. We can still regain some dignity if we surrender to China."
+ DH_japan.2.a:0 "We can no longer afford a war with the PRC, let us surrender."
+ DH_japan.2.b:0 "We will not be humiliated, continue the war."
+ 
  ###### Chinese events----------------------------------
  DH_china.1.t:0 "Japan Offers Peace."
  DH_china.1.d:0 "With Japan defeated and kicked off the mainland, they have been shamed and dishonoured, and have decided to offer us peace."
