@@ -70,10 +70,13 @@ country_event = {
 		#the popular front wins!
 		option = {
 		name = DH_spain.2.a
+		set_political_party = { ideology = democratic popularity = 0.45 }
+		set_political_party = { ideology = fascism popularity = 0.3 }
+		set_political_party = { ideology = communism popularity = 0.25 }
 			}
 			#the national bloc wins!
 		option = {
 		name = DH_spain.2.b
-		create_country_leader = { name = "Jose Maria Quinones" desc = "POLITICS_JOSE_QUINONES_DESC" picture = "" expire = "1965.1.1" ideology = conservatism traits = { } }
+		create_country_leader = { name = "José María Gil-Robles" desc = "POLITICS_JOSE_MARIA_DESC" picture = "" expire = "1965.1.1" ideology = conservatism traits = { } }
 			}
 		}
