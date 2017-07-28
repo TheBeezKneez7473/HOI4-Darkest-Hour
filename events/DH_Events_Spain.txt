@@ -65,18 +65,40 @@ country_event = {
 
 	trigger = {
 		tag = SPR
-		date < 1937.1.1
+		date < 1936.7.1
 	}
 		#the popular front wins!
 		option = {
 		name = DH_spain.2.a
-		set_political_party = { ideology = democratic popularity = 0.45 }
-		set_political_party = { ideology = fascism popularity = 0.3 }
-		set_political_party = { ideology = communism popularity = 0.25 }
+		retire_country_leader = yes
+		set_party_name = { ideology = democratic long_name = SPA_izquierda_republicana name = SPA_izquierda_republicana }
+		create_country_leader = { name = "Manuel Anzana" desc = "POLITICS_MANUEL_ANZANA_DESC" picture = "" expire = "1965.1.1" ideology = conservatism traits = { } }
+		set_political_party = { ideology = democratic popularity = 0.65 }
+		set_political_party = { ideology = fascism popularity = 0.15 }
+		set_political_party = { ideology = communism popularity = 0.20 }
+
 			}
-			#the national bloc wins!
+#########################################################################
+# Political killings
+#########################################################################
+country_event = {
+	id = DH_spain.3
+	title = DH_spain.3.t
+	desc = DH_spain.3.d
+	picture = GFX_news_event_002
+	fire_only_once = no
+
+	trigger = {
+	has_country_leader = { id = 17 ruling_only = yes name = "Manuel Anzana" }
+	}
+	
+	mean_time_to_happen = { days = 15 }
+	
+		#another dead politician that is communist
 		option = {
-		name = DH_spain.2.b
-		create_country_leader = { name = "José María Gil-Robles" desc = "POLITICS_JOSE_MARIA_DESC" picture = "" expire = "1965.1.1" ideology = conservatism traits = { } }
-			}
+		name = DH_spain.3.a
+			add_popularity = {
+			ideology = fascism
+			popularity = 0.05
 		}
+			}
