@@ -537,6 +537,10 @@ RUR = {
     color = rgb { 110 110 110 }
     color_ui = rgb { 185 170 167 }
 }
+RSB = {
+    color = rgb { 110 110 110 }
+    color_ui = rgb { 185 170 167 }
+}
 RFA = {
     color = rgb { 110 110 110 }
     color_ui = rgb { 185 170 167 }
@@ -566,8 +570,10 @@ SCO = {
 	color_ui = rgb { 47 172 255 }
 }
 
-
-
+ETS = {
+    color = rgb { 0 0 100 }
+    color_ui = rgb { 0 0 100 }
+}
 
 D01 = {
 	color = rgb { 200 100 31 }

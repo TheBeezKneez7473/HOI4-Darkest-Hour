@@ -1,0 +1,62 @@
+﻿capital = 287
+
+oob = "ETS"
+
+set_technology = {
+	infantry_weapons = 2
+	infantry_weapons1 = 2
+	
+	support_weapons = 1
+	support_weapons2 = 1
+	
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	
+	construction1 = 1
+	construction2 = 1
+	
+}
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 10
+		}
+
+		fascism = {
+			popularity = 30
+		}
+		
+		neutrality = {
+			popularity = 40
+		}
+		
+		communism = {
+			popularity = 0
+			banned = yes #default is no
+		}
+	}
+	
+	ruling_party = neutrality
+	election_frequency = 48
+	elections_allowed = no
+
+}
+
+add_ideas = {
+	limited_exports
+	limited_conscription
+	partial_economic_mobilisation
+}
+
+create_country_leader = {
+	name = "Kichik Akhund"
+	desc = "KICHIK_AKHUND_DESC"
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}

@@ -1,11 +1,13 @@
 ﻿###########################
-# Realism Overhaul Events : Spain
+# Darkest Hour Events : Portugal
 ###########################
 
 add_namespace = DH_portugal
 
 ###------------------- Portugal ----------------------------------------------
-###### Operation Isabella: Portugese Reply Verde
+#########################################################################
+# Operation Isabella: Portugese Reply Verde
+#########################################################################
 country_event = {
 	id = DH_portugal.1
 	title = DH_portugal.1.t
@@ -68,7 +70,9 @@ country_event = {
 	}
 }
 
-###### Operation Isabella: Portugese Reply Both
+#########################################################################
+# Operation Isabella: Portugese Reply Both
+#########################################################################
 country_event = {
 	id = DH_portugal.2
 	title = DH_portugal.2.t

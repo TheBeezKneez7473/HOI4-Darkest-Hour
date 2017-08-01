@@ -175,17 +175,15 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_GER_naval_bomber3_medium"
 		texturefile = "gfx/interface/technologies/Aircraft/GER_Ju390.dds"
-	}	
-	
-
-
-	
-
-	
-
+	}
 
 	###---------------------------------- Generic Aircrafts ----------------------------------###	
 
+	SpriteType = {
+		name = "GFX_transport_plane_equipment_medium"
+		texturefile = "gfx/interface/technologies/transport_plane_equipment.dds"
+	}
+	
 ## Tactical Bomber
 	SpriteType = {
 		name = "GFX_early_bomber_medium"
@@ -1109,6 +1107,219 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_JAP_jet_interceptor4_medium"
 		texturefile = "gfx/interface/technologies/Aircraft/USA_F104.dds"
+	}
+	
+	### ---------------------------------- French Aircrafts -------------------------------------------- ###
+	
+	#SpriteType = {
+	#	name = "GFX_FRA_transport_plane_equipment_medium"
+	#	texturefile = "gfx/interface/technologies/Aircraft/FRA_transport_plane_equipment.dds"
+	#}
+	
+## Tactical Bomber
+	SpriteType = {
+		name = "GFX_FRA_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_MB210.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_LeO451.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_FRA_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_MartinB26.dds"#??????
+	}		
+	
+	SpriteType = {
+		name = "GFX_FRA_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_Mosquito.dds"
+	}		
+
+	SpriteType = {
+		name = "GFX_FRA_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_Aquilon.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_FRA_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_Vautour.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_jet_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_Baroudeur.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_jet_tactical_bomber4_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_Jaguar.dds"
+	}
+	
+## Strategic Bomber
+	SpriteType = {
+		name = "GFX_FRA_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_F222.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_FRA_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_MB162.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_FRA_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_Br482.dds"
+	}
+
+##CAS
+	SpriteType = {
+		name = "GFX_FRA_CAS1_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_Br691.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_CAS2_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_Br693.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_CAS3_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_P47Thunderbolt.dds"
+	}
+	
+	#SpriteType = {
+	#	name = "GFX_FRA_CAS4_medium"
+	#	texturefile = "gfx/interface/technologies/Aircraft/FRA_???.dds"
+	#}
+	
+	SpriteType = {
+		name = "GFX_FRA_jet_CAS1_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_BrTaon.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_jet_CAS2_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_SE.Mistral.dds"
+	}
+
+## Escort Fighter
+	SpriteType = {
+		name = "GFX_FRA_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_Po630.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_FRA_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_Br690.dds"
+	}		
+
+	SpriteType = {
+		name = "GFX_FRA_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_Br700.dds"
+	}		
+	
+### Fighters	
+	SpriteType = {
+		name = "GFX_FRA_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_NiD62.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_fighter1_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_D520.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_FRA_fighter2_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_D551.dds"#???
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_fighter3_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_F4UCorsair.dds"
+	}	
+	SpriteType = {
+		name = "GFX_FRA_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_Ouragan.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_Mystere.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_jet_fighter3_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_MystereIV.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_jet_fighter4_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_SuperMystere.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_jet_fighter5_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_MirageIIIE.dds"
+	}
+	
+### Interceptor	
+
+	SpriteType = {
+		name = "GFX_FRA_interceptor1_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_MS406.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_FRA_interceptor2_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_MB152.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_interceptor3_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_VG33.dds"
+	}	
+	SpriteType = {
+		name = "GFX_FRA_jet_interceptor1_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_Meteor.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_jet_interceptor2_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_Vampire.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_jet_interceptor3_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_MystereII.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_jet_interceptor4_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_MystereIVA.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_jet_interceptor5_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_MirageIII.dds"
+	}
+	
+## Naval Bomber
+	SpriteType = {
+		name = "GFX_FRA_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_Late298.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_CAO600.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FRA_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/Aircraft/FRA_D750.dds"
 	}
 	
 }

@@ -1,5 +1,5 @@
 ﻿###########################
-# Realism Overhaul Events : Austria
+# Darkest Hour Events : Austria
 ###########################
 
 add_namespace = DH_austria

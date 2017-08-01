@@ -6,7 +6,9 @@ add_namespace = DH_norway
 
 
 ### ------------------- Norway ---------------------------------------------
-######  Norway's Reaction to the Quisling coup
+#########################################################################
+#  Norway reacts to Quisling Coup
+#########################################################################
 country_event = {
 	id = DH_norway.1
 	title = DH_norway.1.t

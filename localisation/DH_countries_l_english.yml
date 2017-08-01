@@ -57,6 +57,7 @@
  RUR_fascism:0 "Reichskommissariat Ural"
  RUR_fascism_DEF:0 "Das Reichskommissariat Ural"
  RUR_fascism_ADJ:0 "German"
+ 
  EGL_fascism:0 "Union of Britain"
  EGL_fascism_DEF:0 "The Union of Britain"
  EGL_democratic:0 "Federal Republic of Britain"
@@ -69,3 +70,10 @@
  EGL_democratic_ADJ:0 "England"
  EGL_neutrality_ADJ:0 "England"
  EGL_communism_ADJ:0 "England"
+ 
+ ETS_fascism:0 "East Turkestan"
+ ETS_fascism_ADJ:0 "East Turkestan"
+ ETS_democratic:0 "East Turkestan"
+ ETS_democratic_ADJ:0 "East Turkestan"
+ ETS_neutrality:0 "East Turkestan"
+

@@ -1,12 +1,10 @@
 ﻿###########################
-# Realism Overhaul Events : Spain
+# Darkest Hour Events : Turkey
 ###########################
 
 add_namespace = DH_turkey
 
-###------------------- Spain ----------------------------------------------
-### ----------------------- Arabs ---------------------------------------------
-
+###------------------- Turkey ----------------------------------------------
 #########################################################################
 #  The Kars Convention on the Subdivision of Transcaucasia
 #########################################################################
@@ -272,26 +270,3 @@ country_event = {
 		}
 	}
 }
-
-#country_event = {
-#	id = DH_turkey.7
-#	is_triggered_only = yes
-#	hidden = yes
-#	
-#	immediate = {
-#		add_resource = {
-#			type = chromium
-#			amount = 20
-#			state = 64 #berlin
-#		}
-#		add_resource = {
-#			type = chromium
-#			amount = -20
-#			state = 341 #istanbul
-#		}
-#	}
-#	
-#	option = {
-#		name = DH_turkey.7.a
-#	}
-#}

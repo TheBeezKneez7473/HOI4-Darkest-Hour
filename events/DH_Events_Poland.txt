@@ -1,10 +1,10 @@
 ﻿###########################
-# Realism Overhaul Events : Poland
+# Darkest Hour Events : Poland
 ###########################
 
 add_namespace = DH_poland
 
-
+### ------------------- Poland ---------------------------------------------
 
 #########################################################################
 # Join the Axis
@@ -20,82 +20,79 @@ country_event = {
 
 
 	#Decline
-    option = {
-      name = DH_poland.1.a
-			ai_chance = {
-				factor = 100
-				modifier = {
-					POL = {
-						has_government = fascism
-					}
-					factor = 0.4
+	option = {
+		name = DH_poland.1.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				POL = {
+					has_government = fascism
 				}
-				modifier = {
-					SOV = {
-						has_completed_focus = SOV_demand_eastern_poland
-					}
-					factor = 0.7
-				}
-				modifier = {
-					SOV = {
-						controls_state = 96
-						controls_state = 95
-						controls_state = 94
-						controls_state = 93
-						controls_state = 91
-						controls_state = 89
-					}
-					factor = 0.45
-				}
-				modifier = {
-					SOV = {
-						has_army_manpower = { size > 3000000 }
-					}
-					factor = 0.6
-				}
+				factor = 0.4
 			}
-      GER = { country_event = { hours = 6 id = DH_germany.31 }}
+			modifier = {
+				SOV = {
+					has_completed_focus = SOV_demand_eastern_poland
+				}
+				factor = 0.7
+			}
+			modifier = {
+				SOV = {
+					controls_state = 96
+					controls_state = 95
+					controls_state = 94
+					controls_state = 93
+					controls_state = 91
+					controls_state = 89
+				}
+				factor = 0.45
+			}
+			modifier = {
+				SOV = {
+					has_army_manpower = { size > 3000000 }
+				}
+				factor = 0.6
+			}
+		}
+		GER = { country_event = { hours = 6 id = DH_germany.31 }}
     }
 	
     #Join Axis
-    option = {
-      name = DH_poland.1.b
-			ai_chance = {
-				factor = 70
-				modifier = {
-					POL = {
-						has_government = democratic
-					}
-					factor = 0.45
+	option = {
+		name = DH_poland.1.b
+		ai_chance = {
+			factor = 70
+			modifier = {
+				POL = {
+					has_government = democratic
 				}
-				modifier = {
-					GER = {
-						has_army_manpower = { size < 2000000 }
-					}
-					factor = 0.5
-				}
-				modifier = {
-					GER = {
-						has_army_manpower = { size < 1500000}
-					}
-					factor = 0.3
-				}
-				modifier = {
-					any_other_country = {
-						NOT = {
-							tag = GER
-						}
-						has_guaranteed = POL
-						is_major = yes
-					}
-					factor = 0.3
-				}
-
-
-
+				factor = 0.45
 			}
-			GER = {
-					add_to_faction = POL
+			modifier = {
+				GER = {
+					has_army_manpower = { size < 2000000 }
 				}
+				factor = 0.5
+			}
+			modifier = {
+				GER = {
+					has_army_manpower = { size < 1500000}
+				}
+				factor = 0.3
+			}
+			modifier = {
+				any_other_country = {
+					NOT = {
+						tag = GER
+					}
+					has_guaranteed = POL
+					is_major = yes
+				}
+				factor = 0.3
+			}
+		}
+		GER = {
+			add_to_faction = POL
+		}
     }
 }

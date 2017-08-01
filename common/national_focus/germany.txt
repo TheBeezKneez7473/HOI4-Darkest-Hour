@@ -3426,6 +3426,9 @@ focus_tree = {
 					country_exists = FRA
 				}
 				has_war_with = FRA
+				FRA = {
+					is_subject_of = GER
+				}
 			}
 		}
 		historical_ai = {
@@ -3758,6 +3761,13 @@ focus_tree = {
 			NOT = {
 				has_war_with = ITA
 			}
+			any_country = {
+				OR = {
+					tag = GER
+					is_subject_of = GER
+				}
+				controls_state = 16
+			}
 		}
 		bypass = {
 			OR = {
@@ -3870,32 +3880,27 @@ focus_tree = {
 					category = night_vision
 				}
 			}
-			SPR = {
+			if = {
+				limit = {
+					OR = { 
+						SPR = { NOT = { has_government = fascism } }
+						NOT = { country_exists = SPR }
+					}
+				}
+				custom_effect_tooltip = GER_nationalist_spain_ally_tt
+			}
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_government = fascism
+				}
 				add_tech_bonus = {
 					bonus = 0.5
 					uses = 1
 					category = night_vision
 				}
 				remove_ideas = SPA_recovering_from_civil_war
-				add_opinion_modifier = {
-					target = GER
-					modifier = ger_spa_alliance_focus
-				}
-			}
-			hidden_effect = {
-				random_other_country = {
-					limit = {
-						original_tag = SPR
-						has_government = fascism
-					}
-					remove_ideas = SPA_recovering_from_civil_war
-				}
-				random_other_country = {
-					limit = {
-						original_tag = D01
-					}
-					remove_ideas = SPA_recovering_from_civil_war
-				}
+				add_opinion_modifier = { target = GER modifier = ger_spa_alliance_focus }
 			}
 		}
 	}
@@ -5201,6 +5206,14 @@ focus_tree = {
 		y = 1
 		ai_will_do = {
 			factor = 8
+		}
+		available = {
+			42 = {
+				is_demilitarized_zone = no
+			}
+			51 = {
+				is_demilitarized_zone = no
+			}
 		}
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor

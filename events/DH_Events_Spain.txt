@@ -1,9 +1,13 @@
 ﻿###########################
-# Realism Overhaul Events : Spain
+# Darkest Hour Events : Spain
 ###########################
 
 add_namespace = DH_spain
 
+### ------------------- Spain ---------------------------------------------
+#########################################################################
+# Join Germany against Portugal?
+#########################################################################
 country_event = {
 	id = DH_spain.1
 	title = DH_spain.1.t
@@ -49,3 +53,27 @@ country_event = {
 		GER = {country_event = { hours = 6 id = DH_germany.6 }}
 	}
 }
+#########################################################################
+# Spanish Elections
+#########################################################################
+country_event = {
+	id = DH_spain.2
+	title = DH_spain.2.t
+	desc = DH_spain.2.d
+	picture = GFX_news_event_002
+	fire_only_once = yes
+
+	trigger = {
+		tag = SPR
+		date < 1937.1.1
+	}
+		#the popular front wins!
+		option = {
+		name = DH_spain.2.a
+			}
+			#the national bloc wins!
+		option = {
+		name = DH_spain.2.b
+		create_country_leader = { name = "Jose Maria Quinones" desc = "POLITICS_JOSE_QUINONES_DESC" picture = "" expire = "1965.1.1" ideology = conservatism traits = { } }
+			}
+		}

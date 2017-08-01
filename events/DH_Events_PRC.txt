@@ -1,0 +1,47 @@
+﻿#########################################################################
+# Darkest Hour Events : PRC
+#########################################################################
+
+add_namespace = DH_prc
+
+### ------------------- PRC ---------------------------------------------
+
+#########################################################################
+#  Japanese White Peace PRC
+#########################################################################
+country_event = {
+	id = DH_prc.1
+	title = DH_prc.1.t
+	desc = DH_prc.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	#Japan offers whitepeace
+    option = {
+      name = DH_prc.1.a
+		JAP = { white_peace = CHI }
+		JAP = { white_peace = PRC }
+		PRC = { annex_country = { target = MAN } }
+		PRC = { annex_country = { target = MEN } }
+		CHI = { transfer_state = 609 }
+    }
+}
+
+#########################################################################
+#  Japan refuses surrender
+#########################################################################
+country_event = {
+	id = DH_prc.2
+	title = DH_prc.2.t
+	desc = DH_prc.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	#Japan offers whitepeace
+    option = {
+		name = DH_prc.2.a
+		#PRC = { annex_country = { target = MAN } }
+		#PRC = { annex_country = { target = MEN } }
+		#CHI = { transfer_state = 609 }
+    }
+}

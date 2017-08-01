@@ -1,11 +1,10 @@
-﻿###########################
-# Realism Overhaul Events : USSR
-###########################
+﻿#########################################################################
+# Darkest Hour Events : USSR
+#########################################################################
 
 add_namespace = DH_soviet
 
 ### ------------------- USSR ---------------------------------------------
-
 
 #########################################################################
 #  Commercial Agreement
@@ -136,7 +135,7 @@ country_event = {
 			traits = { } 
 		}			
 	}
-	# Georgy Malenkov10
+	# Georgy Malenkov
 	option = { 
 		name = DH_soviet.4.b
 		ai_chance = {
@@ -155,7 +154,7 @@ country_event = {
 			traits = { } 
 		}	
 	}	
-	# Lavrenti P. Beria10
+	# Lavrenti P. Beria
 	option = {
 		name = DH_soviet.4.c
 		ai_chance = {
@@ -241,4 +240,123 @@ country_event = {
 		}
 		country_event = { days = 31 id = DH_germany.26 }
 	}	
+}
+
+#########################################################################
+#  Intervene in Xinjiang
+#########################################################################
+country_event = {
+	id = DH_soviet.6
+	title = DH_soviet.6.t
+	desc = DH_soviet.6.d
+	picture = GFX_news_event_002
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	# Yes, we intervene
+	option = { 
+		name = DH_soviet.6.a
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}	
+		declare_war_on = { target = ETS type = puppet }
+	}
+	
+	# No, leave them be
+	option = {
+		name = DH_soviet.6.b
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}	
+}
+
+#########################################################################
+#  Scorched Earth
+#########################################################################
+#country_event = {
+#	id = DH_soviet.7
+#	title = DH_soviet.7.t
+#	desc = DH_soviet.7.d
+#	fire_only_once = no
+#	
+#	trigger = {
+#		SOV = { surrender_progress > 0.05 }
+#	}
+#	
+# Leave nothing for them.
+#	option = { 
+#		name = DH_soviet.7.a
+#		ai_chance = {
+#			factor = 90
+#			modifier = {
+#				factor = 100
+#				is_historical_focus_on = yes
+#			}
+#		}
+#		
+#		#every_neighbor_state = { random_list = { 25 = { damage_building = { type = airbase damage = 1 } } { 25 = { damage_building = { type = infrastructure damage = 1 } } 25 = { damage_building = { type = arms_factory damage = 1 } } 25 = { damage_building = { type = industrial_complex damage = 1 } } } } }
+#	}
+#	
+#	# We will recapture them later
+#	option = { 
+#		name = DH_soviet.7.b
+#		ai_chance = {
+#			factor = 10
+#			modifier = {
+#				factor = 0
+#				is_historical_focus_on = yes
+#			}
+#		}
+#		
+#	}
+#}
+
+#########################################################################
+#  Peace with China
+#########################################################################
+country_event = {
+	id = DH_soviet.7
+	title = DH_soviet.7.t
+	desc = DH_soviet.7.d
+	picture = GFX_news_event_002
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	#Peace
+	option = {
+		name = DH_soviet.7.a
+		ai_chance = {
+			factor = 70
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 100
+			}
+		}
+		SOV = { white_peace = CHI }
+		SOV = { white_peace = ETS }
+		ETS = { annex_country = { target = SIK } }
+	}
+	
+	# No, we must spread the revolution
+	option = {
+		name = DH_soviet.7.b
+		ai_chance = {
+			factor = 30
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
 }

@@ -1,0 +1,120 @@
+﻿#########################################################################
+# Darkest Hour Events : China
+#########################################################################
+
+add_namespace = DH_china
+
+### ------------------- China ---------------------------------------------
+
+#########################################################################
+#  Japanese White Peace China
+#########################################################################
+country_event = {
+	id = DH_china.1
+	title = DH_china.1.t
+	desc = DH_china.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	#Japan offers whitepeace
+    option = {
+		name = DH_china.1.a
+		JAP = { white_peace = CHI }
+		JAP = { white_peace = PRC }
+		CHI = { annex_country = { target = MAN }}
+		CHI = { annex_country = { target = MEN }}
+		CHI = { transfer_state = 609 }
+    }
+}
+
+#########################################################################
+#  Japanese refuses  surrender
+#########################################################################
+country_event = {
+	id = DH_china.2
+	title = DH_china.2.t
+	desc = DH_china.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	#Japan refuses surrender
+    option = {
+		name = DH_china.2.a
+		#CHI = {annex_country = { target = MAN }}
+		#CHI = {annex_country = { target = MEN }}
+		#CHI = {transfer_state = 609 }
+    }
+}
+
+#########################################################################
+#  Intervene in Xinjiang
+#########################################################################
+country_event = {
+	id = DH_china.3
+	title = DH_china.3.t
+	desc = DH_china.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = DH_china.3.a
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		declare_war_on = { target = SIK type = annex_everything }
+	}
+	
+	# No, leave them be
+	option = { 
+		name = DH_china.3.b
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+#########################################################################
+#  Peace with China
+#########################################################################
+country_event = {
+	id = DH_china.4
+	title = DH_china.4.t
+	desc = DH_china.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	#Accept peace
+	option = { 
+		name = DH_china.4.a
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		CHI = { white_peace = SIK }
+		CHI = { white_peace = SOV }
+		SIK = { annex_country = { target = ETS } }
+	}
+
+	#Drive out communism
+	option = {
+		name = DH_china.4.b
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}

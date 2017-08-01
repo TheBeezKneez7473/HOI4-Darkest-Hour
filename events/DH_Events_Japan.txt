@@ -1,0 +1,99 @@
+﻿#########################################################################
+# Darkest Hour Events : Japan
+#########################################################################
+
+add_namespace = DH_japan
+
+### ------------------- Japan ---------------------------------------------
+
+#########################################################################
+#  Offer China Peace?
+#########################################################################
+country_event = {
+	id = DH_japan.1
+	title = DH_japan.1.t
+	desc = DH_japan.1.d
+	fire_only_once = yes
+	
+	trigger = {
+		CHI = { has_defensive_war_with = JAP }
+		AND = {
+			MAN = { has_capitulated = yes}
+			MEN = { has_capitulated = yes}
+			CHI = { controls_state = 525 }
+			CHI = { controls_state = 527 }
+			CHI = { controls_state = 609 }
+		}
+	}
+
+	#Offer peace?
+    option = {#accepts
+      name = DH_japan.1.a
+	  ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}	
+		CHI = { country_event = { id = DH_china.1 } }
+    }
+	
+	option = { #refuses
+      name = DH_japan.1.b
+	  ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}	
+	  		CHI = { country_event = { id = DH_china.2 } }
+    }
+}
+
+#########################################################################
+#  Offer PRC Peace?
+#########################################################################
+country_event = {
+	id = DH_japan.2
+	title = DH_japan.2.t
+	desc = DH_japan.2.d
+	fire_only_once = yes
+	
+	trigger = {
+		PRC = { has_defensive_war_with = JAP }
+		AND = {
+			MAN = {has_capitulated = yes }
+			MEN = {has_capitulated = yes }
+			PRC = {controls_state = 525 }
+			PRC = {controls_state = 527 }
+			PRC = {controls_state = 609 }
+		}
+	}
+
+	#Offer peace?
+    option = {#accepts
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}	
+		name = DH_japan.2.a
+		PRC = { country_event = { id = DH_prc.1 } }
+    }
+	
+	option = {#refuses
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		name = DH_japan.2.b
+		PRC = { country_event = { id = DH_prc.2 } }
+    }
+}

@@ -1,8 +1,10 @@
 ﻿###########################
-# Realism Overhaul Events : Germany
+# Darkest Hour Events : Iran
 ###########################
 
 add_namespace = DH_iran
+
+### ------------------- Iran ---------------------------------------------
 
 #########################################################################
 #  German-Iranian Treaty of Friendship

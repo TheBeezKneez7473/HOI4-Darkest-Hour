@@ -1,0 +1,39 @@
+﻿capital = 408
+
+set_research_slots = 1
+
+
+set_technology = {
+	infantry_weapons = 2
+	infantry_weapons1 = 2
+	tech_mountaineers = 2
+	tech_support = 1
+	tech_recon = 1
+	transport = 1
+}
+
+add_political_power = 0
+set_convoys = 50
+
+set_politics = {
+
+	parties = {		
+		fascism = {
+			popularity =100
+		}				
+	}
+	
+	ruling_party = fascism
+	last_election = "1935.6.9"
+	election_frequency = 0
+	elections_allowed = no
+}
+
+	add_ideas = {
+		volunteer_only
+		export_focus
+		war_economy
+		GER_RK_repression
+	}
+	
+

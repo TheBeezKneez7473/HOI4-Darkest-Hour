@@ -48,3 +48,26 @@ country_event = {
 		name = DH_core.2.a
 	}
 }
+
+#################################################################################
+# Add Idea to Italy for Germany to block alliance till france falls
+#################################################################################
+country_event = {
+	id = DH_core.3
+
+	hidden = yes
+	fire_only_once = yes	
+	is_triggered_only = yes
+	
+	immediate = {
+		ITA = {
+			add_ideas = {
+				ITA_distrusts_hitler
+			}
+		}
+	}
+	
+	option = {
+		name = DH_core.3.a
+	}
+}

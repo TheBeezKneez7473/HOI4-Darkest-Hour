@@ -5,6 +5,7 @@
  germany_establish_rk_moscow:0 "Russia shall be brought down to its historical size."
  germany_establish_rk_kaukasus:0 "For the sake of stability the indeginous people of the Caucasus will be granted a limited form of self-rule."
  germany_establish_rk_ural:0 "It will reach from the Ural in the west to the Yenisei river in the east."
+ germany_establish_rk_siberien:0 "A loyal government that will watch over the people of Siberia."
  germany_rk_military_occupation:0 "Full control of the region is in our best interest."
 
  DH_germany_rk.1.t:0 "Reichskommissariat Ostland"
@@ -44,6 +45,11 @@
  
  DH_germany_rk.8.t:0 "Reichskommissariat Ural"
  DH_germany_rk.8.d:0 "Beyond the Ural Mountains lies the vast expanse of forests, rivers, and plains, filled with the riches of mother nature. A wilderness that stretches for thousands of kilometres, only to be sparsely interrupted by human activity. Ruling such an enormous region is difficult enough, let alone for the army. Perhaps it would be best to establish some form of government."
+ DH_germany_rk.8.a:0 "Establish the Reichskommissariat."
+ DH_germany_rk.8.b:0 "Continue Military Occupation."
+ 
+ DH_germany_rk.8.t:0 "Reichskommissariat Siberien"
+ DH_germany_rk.8.d:0 "The harsh weather and difficult terrain in Siberia as well as the mostly empty wilderness would make it very difficult to send an army to rule whatever is populated by humans. Let us establish a friendly government instead."
  DH_germany_rk.8.a:0 "Establish the Reichskommissariat."
  DH_germany_rk.8.b:0 "Continue Military Occupation."
  
@@ -215,6 +221,7 @@
  DH_germany.36.t:0 "Fate of Malay"
  DH_germany.36.a:0 "It belongs to our sphere of influence."
  DH_germany.36.b:0 "Let it be Independent. An Asia for Asians!" 
+ 
  ###### Arab events----------------------------------------
  DH_arab.1.t:0 "Arab Union Accession"
  DH_arab.1.a:0 "Join"
@@ -310,6 +317,11 @@
  DH_italy.3.a:0 "Mare Nostrum - Our Sea"
  DH_italy.3.b:0 "We have enough naval bases"
  
+ DH_italy.4.t:0 "Germany Takes Paris"
+ DH_italy.4.d:0 "With the fall of Paris to the German Forces perhaps it's time to look past our dislike for Hitler and join the axis"
+ DH_italy.4.a:0 "Indeed"
+ DH_italy.4.b:0 "Italy First!"
+ 
  ###### Norway's events-------------------------------------
  DH_norway.1.t:0 "Quisling's setting up a coup!"
  DH_norway.1.a:0 "Submit to the coup."
@@ -348,6 +360,16 @@
  DH_soviet.5.a:0 "Let's bury the West"
  DH_soviet.5.b:0 "We need more time"
  
+ DH_soviet.6.t:0 "Xinjiang Rebellion"
+ DH_soviet.6.d:0 "A Islamist rebellion has risen up in Xinjiang. We could use this to justify a war and help our Communist brothers in the fight against this opiate of the masses"
+ DH_soviet.6.a:0 "Let's help our brothers."
+ DH_soviet.6.b:0 "They can handle themselves."
+ 
+ DH_soviet.7.t:0 "Xinjiang Surrenders"
+ DH_soviet.7.d:0 "We have failed in achieving our goal of protecting our Communist brothers in Xinjiang. We should make peace with our enemy and help fuel the revolution another time."
+ DH_soviet.7.a:0 "We shall accept peace, for now."
+ DH_soviet.7.b:0 "We will continue fighting to liberate our comrades!"
+ 
  ###### Commonwealth events-------------------------------------
  DH_commonwealth.1.t:0 "Commonwealth Membership Questioned"
  DH_commonwealth.1.d:0 "With the isle of Britain lost the United Kingdom can no longer be regarded as a one of the Great Powers, members to the British Commonwealth have started questioning the nature of the relationship. Even though advantages of remaining are few, a complete fracture of the Commonwealth would undermine the war effort. Others emphasise that independence is prefered now that the UK can no longer guarantee its member's security."
@@ -363,7 +385,7 @@
  DH_commonwealth.3.d:0 "Now that the transition of Britain is over, some of the fascist members of the British Empire have expressed their wish to remain a part of the new Britain, forsaking their old master."
  DH_commonwealth.3.a:0 "For the Empire!"
  
- ###### German events-------------------------------------
+ ###### Iran events-------------------------------------
  DH_iran.1.t:0 "German-Iranian Treaty of Friendship"
  DH_iran.1.d:0 "Berlin has approached us with a lucrative offer. By signing the German-Iranian Friendship Treaty the Germans offer us better research equipment and bring us up to speed on the latest scientific breakthroughs. Accepting such an offer however will bring us in a closer ambit of the Reich. Other major powers might see this foreign influence as a provocation."
  DH_iran.1.a:0 "Accept"
@@ -376,3 +398,47 @@
  DH_iran.3.t:0 "[From.GetName] has decline the Treaty"
  DH_iran.3.d:0 "It seems the Persians are not so keen on their Aryan kinship after all. They have rejected the German-Iranian Friendship Treaty, fearing that allowing Germany to influence their academia will bring harm to their international situation. Perhaps they will wake up to their geo-political reality some other time."
  DH_iran.3.a:0 "Disappointing"
+ 
+ ###### Chinese events----------------------------------
+ DH_china.1.t:0 "Japan Offers Peace."
+ DH_china.1.d:0 "With Japan defeated and kicked off the mainland, they have been shamed and dishonoured, and have decided to offer us peace."
+ DH_china.1.a:0 "We must focus on rebuilding China!"
+ DH_china.1.b:0 "They must pay for what they have done to our people!"
+ 
+ DH_china.2.t:0 "Japan Refuses to Surrender"
+ DH_china.2.d:0 "Even though the Japanese have been driven off the mainland, they still want to continue the war. Their arrogance will be their end."
+ DH_china.2.a:0 "We will end them once and for all."
+ 
+ DH_china.3.t:0 "Xinjiang Rebellion"
+ DH_china.3.d:0 "Islamists rebelled in Xinjiang, if we help and intervene, we could be one step closer to uniting China."
+ DH_china.3.a:0 "Join the rebellion!"
+ DH_china.3.b:0 "Let's leave them be."
+ 
+ DH_china.4.t:0 "East Turkestan surrenders"
+ DH_china.4.d:0 "East Turkestan has surrendered to the Xinjiang forces and it will be hard to continue the fight, we should accept the peace."
+ DH_china.4.a:0 "Accept defeat."
+ DH_china.4.b:0 "We must continue to drive Communism out of China!"
+ 
+ DH_prc.1.t:0 "Japan Offers Peace."
+ DH_prc.1.d:0 "With Japan defeated and kicked off the mainland, they have been shamed and dishonoured, and have decided to offer us peace."
+ DH_prc.1.a:0 "We must focus on rebuilding China!"
+ DH_prc.1.b:0 "They must pay for what they have done to our people!"
+ 
+ DH_prc.2.t:0 "Japan Refuses to Surrender"
+ DH_prc.2.d:0 "Even though the Japanese have been driven off the mainland, they still want to continue the war. Their arrogance will be their end."
+ DH_prc.2.a:0 "We will end them once and for all."
+
+ ###### Xinjiang events----------------------------------
+ DH_xinjiang.1.t:0 "Xinjiang Rebellion"
+ DH_xinjiang.1.d:0 "A Islamist rebellion has risen up in Xinjiang. We must crush these dissenters!"
+ DH_xinjiang.1.a:0 "For the Nation!"
+ 
+ DH_xinjiang.2.t:0 "Offer China Peace?"
+ DH_xinjiang.2.d:0 "Having defeated the combined might of the Muslim rebels and the Chinese offer, it is in our best interest to offer them peace."
+ DH_xinjiang.2.a:0 "They are defeated. We must focus on other matters."
+ DH_xinjiang.2.b:0 "We must free the Chinese people from tyranny!"
+ 
+  ###### East Turkestan events----------------------------------
+ DH_eastturkestan.1.t:0 "Offer Soviets Peace"
+ DH_eastturkestan.1.d:0 "We have achieved our goal and established our Islamic Republic, let us make peace with the Soviets before this ends"
+ DH_eastturkestan.1.a:0 "Peace is our only option."

@@ -1,0 +1,11 @@
+ideas = {
+
+	country = {
+		ITA_distrusts_hitler = {
+			modifier = {
+				join_faction_tension = 1.00
+				ai_get_ally_desire_factor = -100
+			}
+		}
+	}
+}

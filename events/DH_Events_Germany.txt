@@ -1,13 +1,9 @@
 ﻿###########################
-# Realism Overhaul Events : Germany
+# Darkest Hour Events : Germany
 ###########################
 
 add_namespace = DH_germany
 add_namespace = DH_germany_rk
-
-
-
-
 
 ### ---------------------------------------------------------------------------- Germany ---------------------------------------------
 
@@ -2166,4 +2162,83 @@ country_event = {
 		}
 		custom_effect_tooltip = germany_rk_military_occupation
 	}
+}
+
+#########################################################################
+#  RK  Siberien
+#########################################################################
+country_event = {
+	id = DH_germany_rk.9
+	title = DH_germany_rk.9.t
+	desc = DH_germany_rk.9.d
+	picture = GFX_report_event_001
+	fire_only_once = yes
+	
+        trigger = {
+			tag = GER
+			GER = { has_government = fascism }
+			SOV = { exists = no }	
+			GER = { 
+				has_full_control_of_state = 567
+				has_full_control_of_state = 576
+				has_full_control_of_state = 516
+				has_full_control_of_state = 575
+				has_full_control_of_state = 566		
+				has_full_control_of_state = 575
+				has_full_control_of_state = 565			
+				has_full_control_of_state = 564
+				has_full_control_of_state = 563
+				has_full_control_of_state = 644
+				has_full_control_of_state = 574 
+				has_full_control_of_state = 562	
+				has_full_control_of_state = 637
+				has_full_control_of_state = 561	
+				has_full_control_of_state = 560
+				has_full_control_of_state = 657		
+				has_full_control_of_state = 409
+				has_full_control_of_state = 408
+				has_full_control_of_state = 655	
+				
+			}	
+        }
+
+	
+# Establish RK Siberien
+	option = { 
+		name = DH_germany_rk.9.a
+		hidden_effect = {		
+			puppet = RSB
+			RSB = {
+			
+				transfer_state = 567
+				transfer_state = 576
+				transfer_state = 516
+				transfer_state = 575
+				transfer_state = 566		
+				transfer_state = 575
+				transfer_state = 565			
+				transfer_state = 564
+				transfer_state = 563
+				transfer_state = 644
+				transfer_state = 574 
+				transfer_state = 562	
+				transfer_state = 637
+				transfer_state = 561	
+				transfer_state = 560
+				transfer_state = 657		
+				transfer_state = 409
+				transfer_state = 408
+				transfer_state = 655				
+			}
+		}
+		custom_effect_tooltip = germany_establish_rk_siberien	
+	}
+	#Establish direct military occupation
+	option = { 
+		name = DH_germany_rk.9.b
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = germany_rk_military_occupation		
+	}	
 }

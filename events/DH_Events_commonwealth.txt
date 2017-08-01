@@ -4,6 +4,7 @@
 
 add_namespace = DH_commonwealth
 
+### ------------------- Commonwealth ---------------------------------------------
 
 #########################################################################
 # Fate of the British Empire : Germany preserves the Regime in Britain
@@ -226,17 +227,3 @@ country_event = {
 		name = DH_commonwealth.3.a
 	}
 }
-
-#country_event = {
-#	id = DH_commonwealth.4
-#	title = DH_commonwealth.4.t
-#	desc = DH_commonwealth.4.d
-#	picture = GFX_report_event_british_inspect_troops #placeholder
-#	fire_only_once = yes
-#	
-#	is_triggered_only = yes
-#	
-#	option = {
-#		name = "IT HAPPENED [From.GetName] STAYED"
-#	}
-#}

@@ -1,9 +1,14 @@
 ﻿###########################
-# Realism Overhaul Events : Ireland
+# Darkest Hour Events : Ireland
 ###########################
 
 add_namespace = DH_ireland
 
+### ------------------- Ireland ---------------------------------------------
+
+#########################################################################
+#  Join the Axis or not?
+#########################################################################
 country_event = {
 	id = DH_ireland.1
 	title = DH_ireland.1.t

@@ -116,4 +116,8 @@ spriteTypes = {
 		name = "GFX_idea_PER_german_academic_influence"
 		texturefile = "gfx/interface/ideas/generic_research_bonus.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_ITA_distrusts_hitler"
+		texturefile = "gfx/interface/ideas/idea_generic_fascism_banned.dds"
+	}
 }
